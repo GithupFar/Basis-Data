@@ -55,56 +55,56 @@ constraint fk_pnomor_ foreign key (Pnomor) references Proyek(Pnomor)
 --end--
 
 --DML by nadd--
-INSERT INTO Pegawai VALUES ("John", "B", "Smith", "123456789", "731 Fondren, Houston, TX", "30000", "L", "333445555", "5");
-INSERT INTO Pegawai VALUES ("Franklin", "T", "Wong", "333445555", "638 Voss, Houston, TX", "40000", "L", "888665555", "5");
-INSERT INTO Pegawai VALUES ("Alicia", "J", "Zelaya", "999887777", "3321 Castle, Spring, TX", "25000", "L", "987654321", "4");
-INSERT INTO Pegawai VALUES ("Jennifer", "S", "Wallace", "987654321", "291 Berry, Bellaire, TX", "43000", "L", "888665555", "4");
-INSERT INTO Pegawai VALUES ("Ramesh", "K", "Narayan", "666884444", "975 Fire Oak, Humble, TX", "38000", "L", "333445555", "5");
-INSERT INTO Pegawai VALUES ("Joyce", "A", "English", "453453453", "5631 Rice, Houston, TX", "25000", "L", "333445555", "5");
-INSERT INTO Pegawai VALUES ("Ahmad", "V", "Jabbar", "987987987", "980 Dallas, Houston, TX", "25000", "L", "987654321", "4");
-INSERT INTO Pegawai VALUES ("James", "E", "Borg", "888665555", "450 Stone, Houston, TX", "55000", "L", null, "1");
+INSERT INTO Pegawai VALUES ('John', 'B', 'Smith', '123456789', '731 Fondren, Houston, TX', '30000', 'L', '333445555', '5');
+INSERT INTO Pegawai VALUES ('Franklin', 'T', 'Wong', '333445555', '638 Voss, Houston, TX', '40000', 'L', '888665555', '5');
+INSERT INTO Pegawai VALUES ('Alicia', 'J', 'Zelaya', '999887777', '3321 Castle, Spring, TX', '25000', 'L', '987654321', '4');
+INSERT INTO Pegawai VALUES ('Jennifer', 'S', 'Wallace', '987654321', '291 Berry, Bellaire, TX', '43000', 'L', '888665555', '4');
+INSERT INTO Pegawai VALUES ('Ramesh', 'K', 'Narayan', '666884444', '975 Fire Oak, Humble, TX', '38000', 'L', '333445555', '5');
+INSERT INTO Pegawai VALUES ('Joyce', 'A', 'English', '453453453', '5631 Rice, Houston, TX', '25000', 'L', '333445555', '5');
+INSERT INTO Pegawai VALUES ('Ahmad', 'V', 'Jabbar', '987987987', '980 Dallas, Houston, TX', '25000', 'L', '987654321', '4');
+INSERT INTO Pegawai VALUES ('James', 'E', 'Borg', '888665555', '450 Stone, Houston, TX', '55000', 'L', null, '1');
 
-INSERT INTO Departemen VALUES ("Research", "5", "333445555", to_date("22-05-1988", "DD-MM-YYYY");
-INSERT INTO Departemen VALUES ("Adinistration", "4", "987654321", to_date("01-01-1995", "DD-MM-YYYY");
-INSERT INTO Departemen VALUES ("HeadQuarters", "1", "888665555", to_date("19-06-1981", "DD-MM-YYYY");
+INSERT INTO Departemen VALUES ('Research', '5', '333445555', to_date('22-05-1988', 'DD-MM-YYYY');
+INSERT INTO Departemen VALUES ('Adinistration', '4', '987654321', to_date('01-01-1995', 'DD-MM-YYYY');
+INSERT INTO Departemen VALUES ('HeadQuarters', '1', '888665555', to_date('19-06-1981', 'DD-MM-YYYY');
 
-INSERT INTO Lokasi_Departemen VALUES ("1", "Houston");
-INSERT INTO Lokasi_Departemen VALUES ("4", "Stafford");
-INSERT INTO Lokasi_Departemen VALUES ("5", "Bellaire");
-INSERT INTO Lokasi_Departemen VALUES ("5", "Sugarland");
-INSERT INTO Lokasi_Departemen VALUES ("5", "Houston");
+INSERT INTO Lokasi_Departemen VALUES ('1', 'Houston');
+INSERT INTO Lokasi_Departemen VALUES ('4', 'Stafford');
+INSERT INTO Lokasi_Departemen VALUES ('5', 'Bellaire');
+INSERT INTO Lokasi_Departemen VALUES ('5', 'Sugarland');
+INSERT INTO Lokasi_Departemen VALUES ('5', 'Houston');
 
-INSERT INTO Proyek VALUES ("ProductX", "1", "Bellaire", "5");
-INSERT INTO Proyek VALUES ("ProductY", "2", "Sugarland", "5");
-INSERT INTO Proyek VALUES ("ProductZ", "3", "Houston", "5");
-INSERT INTO Proyek VALUES ("Computerization", "10", "Stafford", "4");
-INSERT INTO Proyek VALUES ("Reorganization", "20", "Houston", "1");
-INSERT INTO Proyek VALUES ("Newbenefits", "30", "Stafford", "4");
+INSERT INTO Proyek VALUES ('ProductX', '1', 'Bellaire', '5');
+INSERT INTO Proyek VALUES ('ProductY', '2', 'Sugarland', '5');
+INSERT INTO Proyek VALUES ('ProductZ', '3', 'Houston', '5');
+INSERT INTO Proyek VALUES ('Computerization', '10', 'Stafford', '4');
+INSERT INTO Proyek VALUES ('Reorganization', '20', 'Houston', '1');
+INSERT INTO Proyek VALUES ('Newbenefits', '30', 'Stafford', '4');
 
-INSERT INTO Tanggungan VALUES ("333445555", "Alice", "P", to_date("05-04-1986" "DD-MM-YYYY"), "Anak Perempuan");
-INSERT INTO Tanggungan VALUES ("333445555", "Theodore", "L", to_date("25-10-1983" "DD-MM-YYYY"), "Anak Laki-laki");
-INSERT INTO Tanggungan VALUES ("333445555", "Joy", "P", to_date("03-05-1958" "DD-MM-YYYY"), "Pasangan");
-INSERT INTO Tanggungan VALUES ("987654321", "Abner", "L", to_date("28-02-1942" "DD-MM-YYYY"), "Pasangan");
-INSERT INTO Tanggungan VALUES ("123456789", "Michael", "L", to_date("04-01-1988" "DD-MM-YYYY"), "Anak Laki-laki");
-INSERT INTO Tanggungan VALUES ("123456789", "Alice", "P", to_date("30-12-1988" "DD-MM-YYYY"), "Anak Perempuan");
-INSERT INTO Tanggungan VALUES ("123456789", "Elizabeth", "P", to_date("05-05-1967" "DD-MM-YYYY"), "Pasangan");
+INSERT INTO Tanggungan VALUES ('333445555', 'Alice', 'P', to_date('05-04-1986' 'DD-MM-YYYY'), 'Anak Perempuan');
+INSERT INTO Tanggungan VALUES ('333445555', 'Theodore', 'L', to_date('25-10-1983' 'DD-MM-YYYY'), 'Anak Laki-laki');
+INSERT INTO Tanggungan VALUES ('333445555', 'Joy', 'P', to_date('03-05-1958' 'DD-MM-YYYY'), 'Pasangan');
+INSERT INTO Tanggungan VALUES ('987654321', 'Abner', 'L', to_date('28-02-1942' 'DD-MM-YYYY'), 'Pasangan');
+INSERT INTO Tanggungan VALUES ('123456789', 'Michael', 'L', to_date('04-01-1988' 'DD-MM-YYYY'), 'Anak Laki-laki');
+INSERT INTO Tanggungan VALUES ('123456789', 'Alice', 'P', to_date('30-12-1988' 'DD-MM-YYYY'), 'Anak Perempuan');
+INSERT INTO Tanggungan VALUES ('123456789', 'Elizabeth', 'P', to_date('05-05-1967' 'DD-MM-YYYY'), 'Pasangan');
 
-INSERT INTO Bekerja_pada VALUES ("123456789", "1", "32.5");
-INSERT INTO Bekerja_pada VALUES ("123456789", "2", "7.5");
-INSERT INTO Bekerja_pada VALUES ("666884444", "3", "40.0");
-INSERT INTO Bekerja_pada VALUES ("453453453", "1", "20.0");
-INSERT INTO Bekerja_pada VALUES ("453453543", "2", "20.0");
-INSERT INTO Bekerja_pada VALUES ("333445555", "2", "10.0");
-INSERT INTO Bekerja_pada VALUES ("333445555", "3", "10.0");
-INSERT INTO Bekerja_pada VALUES ("333445555", "10", "10.0");
-INSERT INTO Bekerja_pada VALUES ("333445555", "20", "10.0");
-INSERT INTO Bekerja_pada VALUES ("999887777", "30", "30.0");
-INSERT INTO Bekerja_pada VALUES ("999887777", "30", "10.0");
-INSERT INTO Bekerja_pada VALUES ("987987987", "10", "35.0");
-INSERT INTO Bekerja_pada VALUES ("987987987", "30", "5.0");
-INSERT INTO Bekerja_pada VALUES ("987654321", "30", "20.0");
-INSERT INTO Bekerja_pada VALUES ("987654321", "20", "15.0");
-INSERT INTO Bekerja_pada VALUES ("888665555", "20", NULL);
+INSERT INTO Bekerja_pada VALUES ('123456789', '1', '32.5');
+INSERT INTO Bekerja_pada VALUES ('123456789', '2', '7.5');
+INSERT INTO Bekerja_pada VALUES ('666884444', '3', '40.0');
+INSERT INTO Bekerja_pada VALUES ('453453453', '1', '20.0');
+INSERT INTO Bekerja_pada VALUES ('453453543', '2', '20.0');
+INSERT INTO Bekerja_pada VALUES ('333445555', '2', '10.0');
+INSERT INTO Bekerja_pada VALUES ('333445555', '3', '10.0');
+INSERT INTO Bekerja_pada VALUES ('333445555', '10', '10.0');
+INSERT INTO Bekerja_pada VALUES ('333445555', '20', '10.0');
+INSERT INTO Bekerja_pada VALUES ('999887777', '30', '30.0');
+INSERT INTO Bekerja_pada VALUES ('999887777', '30', '10.0');
+INSERT INTO Bekerja_pada VALUES ('987987987', '10', '35.0');
+INSERT INTO Bekerja_pada VALUES ('987987987', '30', '5.0');
+INSERT INTO Bekerja_pada VALUES ('987654321', '30', '20.0');
+INSERT INTO Bekerja_pada VALUES ('987654321', '20', '15.0');
+INSERT INTO Bekerja_pada VALUES ('888665555', '20', NULL);
 
 --end--
 
