@@ -1,14 +1,14 @@
---DDL by far--
+--DDL by Far--
 create table Pegawai(
 NmDepan varchar (150),
 Inisial char(1),
 NmBelakang varchar(150),
-NoKTP char(9), --in this case 9
+NoKTP char(9), --dlm case ini 9
 Alamat varchar (150),
-Gaji integer,  --ask google
+Gaji integer,  --kek di c
 JenisKel_peg char(1),
 NoKTPKepala char(9),
-DNO char(1), --in this case 1
+DNO char(1), --dlm case ini 1
 constraint pk_noktp primary key (NoKTP)
 );
 
@@ -23,7 +23,7 @@ constraint pk_dnomor primary key (Dnomor)
 create table Lokasi_Departemen(
 Dnomor char(1),
 Dlokasi varchar(50),
-constraint pk_dlokasi primary key (Dlokasi),
+--constraint pk_dlokasi primary key (Dlokasi),
 constraint fk_dnomor foreign key (Dnomor) references Departemen(Dnomor)
 );
 
@@ -41,14 +41,14 @@ Nama_Tanggungan varchar(150),
 JenisKel_tanggungan char(1),
 TglLahir date,
 Hubungan varchar(100),
-constraint pk_namat primary key (Nama_Tanggungan),
+--constraint pk_namat primary key (Nama_Tanggungan),
 constraint fk_noktp foreign key (NoKTP) references Pegawai(NoKTP)
 );
 
 create table Bekerja_pada(
 NoKTP char(9),
 Pnomor char(2),
-LamaJam decimal(3,1), --number(p,s) ask google
+LamaJam decimal(3,1),
 constraint fk_noktp_ foreign key (NoKTP) references Pegawai(NoKTP),
 constraint fk_pnomor_ foreign key (Pnomor) references Proyek(Pnomor)
 );
@@ -64,9 +64,9 @@ INSERT INTO Pegawai VALUES ('Joyce', 'A', 'English', '453453453', '5631 Rice, Ho
 INSERT INTO Pegawai VALUES ('Ahmad', 'V', 'Jabbar', '987987987', '980 Dallas, Houston, TX', '25000', 'L', '987654321', '4');
 INSERT INTO Pegawai VALUES ('James', 'E', 'Borg', '888665555', '450 Stone, Houston, TX', '55000', 'L', null, '1');
 
-INSERT INTO Departemen VALUES ('Research', '5', '333445555', to_date('22-05-1988', 'DD-MM-YYYY');
-INSERT INTO Departemen VALUES ('Adinistration', '4', '987654321', to_date('01-01-1995', 'DD-MM-YYYY');
-INSERT INTO Departemen VALUES ('HeadQuarters', '1', '888665555', to_date('19-06-1981', 'DD-MM-YYYY');
+INSERT INTO Departemen VALUES ('Research', '5', '333445555', to_date('22-05-1988', 'DD-MM-YYYY'));
+INSERT INTO Departemen VALUES ('Adinistration', '4', '987654321', to_date('01-01-1995', 'DD-MM-YYYY'));
+INSERT INTO Departemen VALUES ('HeadQuarters', '1', '888665555', to_date('19-06-1981', 'DD-MM-YYYY'));
 
 INSERT INTO Lokasi_Departemen VALUES ('1', 'Houston');
 INSERT INTO Lokasi_Departemen VALUES ('4', 'Stafford');
@@ -81,13 +81,13 @@ INSERT INTO Proyek VALUES ('Computerization', '10', 'Stafford', '4');
 INSERT INTO Proyek VALUES ('Reorganization', '20', 'Houston', '1');
 INSERT INTO Proyek VALUES ('Newbenefits', '30', 'Stafford', '4');
 
-INSERT INTO Tanggungan VALUES ('333445555', 'Alice', 'P', to_date('05-04-1986' 'DD-MM-YYYY'), 'Anak Perempuan');
-INSERT INTO Tanggungan VALUES ('333445555', 'Theodore', 'L', to_date('25-10-1983' 'DD-MM-YYYY'), 'Anak Laki-laki');
-INSERT INTO Tanggungan VALUES ('333445555', 'Joy', 'P', to_date('03-05-1958' 'DD-MM-YYYY'), 'Pasangan');
-INSERT INTO Tanggungan VALUES ('987654321', 'Abner', 'L', to_date('28-02-1942' 'DD-MM-YYYY'), 'Pasangan');
-INSERT INTO Tanggungan VALUES ('123456789', 'Michael', 'L', to_date('04-01-1988' 'DD-MM-YYYY'), 'Anak Laki-laki');
-INSERT INTO Tanggungan VALUES ('123456789', 'Alice', 'P', to_date('30-12-1988' 'DD-MM-YYYY'), 'Anak Perempuan');
-INSERT INTO Tanggungan VALUES ('123456789', 'Elizabeth', 'P', to_date('05-05-1967' 'DD-MM-YYYY'), 'Pasangan');
+INSERT INTO Tanggungan VALUES ('333445555', 'Alice', 'P', to_date('05-04-1986','DD-MM-YYYY'), 'Anak Perempuan');
+INSERT INTO Tanggungan VALUES ('333445555', 'Theodore', 'L', to_date('25-10-1983','DD-MM-YYYY'), 'Anak Laki-laki');
+INSERT INTO Tanggungan VALUES ('333445555', 'Joy', 'P', to_date('03-05-1958','DD-MM-YYYY'), 'Pasangan');
+INSERT INTO Tanggungan VALUES ('987654321', 'Abner', 'L', to_date('28-02-1942','DD-MM-YYYY'), 'Pasangan');
+INSERT INTO Tanggungan VALUES ('123456789', 'Michael', 'L', to_date('04-01-1988','DD-MM-YYYY'), 'Anak Laki-laki');
+INSERT INTO Tanggungan VALUES ('123456789', 'Alice', 'P', to_date('30-12-1988','DD-MM-YYYY'), 'Anak Perempuan');
+INSERT INTO Tanggungan VALUES ('123456789', 'Elizabeth', 'P', to_date('05-05-1967','DD-MM-YYYY'), 'Pasangan');
 
 INSERT INTO Bekerja_pada VALUES ('123456789', '1', '32.5');
 INSERT INTO Bekerja_pada VALUES ('123456789', '2', '7.5');
@@ -104,11 +104,13 @@ INSERT INTO Bekerja_pada VALUES ('987987987', '10', '35.0');
 INSERT INTO Bekerja_pada VALUES ('987987987', '30', '5.0');
 INSERT INTO Bekerja_pada VALUES ('987654321', '30', '20.0');
 INSERT INTO Bekerja_pada VALUES ('987654321', '20', '15.0');
-INSERT INTO Bekerja_pada VALUES ('888665555', '20', NULL);
-
+INSERT INTO Bekerja_pada VALUES ('888665555', '20', '');
 --end--
 
 --number.3--
+
+--end--
+
 
 /* --use this if you stuck--
 drop table Bekerja_pada;
