@@ -1,0 +1,70 @@
+--DDL by far--
+create table Pegawai(
+NmDepan varchar (150),
+Inisial char(1),
+NmBelakang varchar(150),
+NoKTP char(9), --in this case 9
+Alamat varchar (150),
+Gaji integer,  --ask google
+JenisKel_peg char(1),
+NoKTPKepala char(9),
+DNO char(1), --in this case 1
+constraint pk_noktp primary key (NoKTP)
+);
+
+create table Departemen(
+Dname varchar(100),
+Dnomor char(1),
+NOKTP_MGR char(9),
+TglMulai_MGR date,
+constraint pk_dnomor primary key (Dnomor)
+);
+
+create table Lokasi_Departemen(
+Dnomor char(1),
+Dlokasi varchar(50),
+constraint pk_dlokasi primary key (Dlokasi),
+constraint fk_dnomor foreign key (Dnomor) references Departemen(Dnomor)
+);
+
+create table Proyek(
+Pnama varchar(50),
+Pnomor char(2),
+Plokasi varchar(150),
+Dnum char(1),
+constraint pk_pnomor primary key (Pnomor)
+);
+
+create table Tanggungan(
+NoKTP char(9),
+Nama_Tanggungan varchar(150),
+JenisKel_tanggungan char(1),
+TglLahir date,
+Hubungan varchar(100),
+constraint pk_namat primary key (Nama_Tanggungan),
+constraint fk_noktp foreign key (NoKTP) references Pegawai(NoKTP)
+);
+
+create table Bekerja_pada(
+NoKTP char(9),
+Pnomor char(2),
+LamaJam decimal(3,1), --number(p,s) ask google
+constraint fk_noktp_ foreign key (NoKTP) references Pegawai(NoKTP),
+constraint fk_pnomor_ foreign key (Pnomor) references Proyek(Pnomor)
+);
+--end--
+
+--DML by nadd--
+
+--end--
+
+--number.3--
+
+/* --use this if you stuck--
+drop table Bekerja_pada;
+drop table Tanggungan;
+drop table Pegawai;
+drop table Lokasi_Departemen;
+drop table Departemen;
+drop table Proyek;
+*/
