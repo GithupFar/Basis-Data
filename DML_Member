@@ -39,7 +39,7 @@ INSERT INTO member_table VALUES ('M0035','Yolanda Hertita Pratama',to_date('09-0
 insert into cabang values ('C0001','K0005','Wisma Permai IX No.1,Surabaya','0354188087');
 insert into cabang values ('C0001','K0010','Jl Mulyosari Utara IX No.1,Surabaya','0354005130');
 insert into cabang values ('C0001','K0015','Jl Wisma Pagesangan III No.35,Surabaya','0354819088');
-insert into cabang values ('C0001','K0024','Jl Jambangan Kebon Agung Tol No.03,Surabaya','0354228595');
+insert into cabang values ('C0001','K0020','Jl Jambangan Kebon Agung Tol No.03,Surabaya','0354228595');
 
 
 
