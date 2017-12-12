@@ -40,5 +40,15 @@ insert into cabang values ('C0001','K0005','Wisma Permai IX No.1,Surabaya','0354
 insert into cabang values ('C0002','K0010','Jl Mulyosari Utara IX No.1,Surabaya','0354005130');
 insert into cabang values ('C0003','K0015','Jl Wisma Pagesangan III No.35,Surabaya','0354819088');
 insert into cabang values ('C0004','K0020','Jl Jambangan Kebon Agung Tol No.03,Surabaya','0354228595');
+--done
+
+--insert nota
+insert into nota values ('N0001','M0001','K0001',to_date('12-10-2017','dd-mm-yyyy'),to_date('12-10-2017','dd-mm-yyyy'),to_date('12-10-2017','dd-mm-yyyy'),'1','R01');
+
+
+
+
+
+
 
 
