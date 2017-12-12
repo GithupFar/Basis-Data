@@ -57,3 +57,32 @@ create table cabang
   constraint pk_cabang primary key (c_no), 
   constraint fk_k_cabang foreign key (k_kode) REFERENCES karyawan
 );
+
+--DML
+INSERT INTO karyawan VALUES ('K0001','Muh. Taufiqulsadi','asrama gedung g 407','Cuci',to_date('09-04-2017','dd-mm-yyyy'));
+INSERT INTO karyawan VALUES ('K0002','Randi Noor Pasha','jl keputih tegal no 74','Cuci',to_date('10-04-2017','dd-mm-yyyy'));
+INSERT INTO karyawan VALUES ('K0003','Honesta Swandaru','Asrama Mahasiswa ITS Gedung B No. 104','Setrika',to_date('10-04-2017','dd-mm-yyyy'));
+INSERT INTO karyawan VALUES ('K0004','Aguel Satria Wijaya','Asrama ITS G 301','Setrika',to_date('11-04-2017','dd-mm-yyyy'));
+INSERT INTO karyawan VALUES ('K0005','Ghifaroza Rahmadiana','Jl. Manyar Sabrangan IX / 11','Cuci',to_date('11-04-2017','dd-mm-yyyy'));
+INSERT INTO karyawan VALUES ('K0006','Andika Andra','Keputih Gg Makam No 10A','Cuci',to_date('09-04-2017','dd-mm-yyyy'));
+INSERT INTO karyawan VALUES ('K0007','Firman Maulana','Rumdis TNI AL C59','Cuci',to_date('12-04-2017','dd-mm-yyyy'));
+INSERT INTO karyawan VALUES ('K0008','Nada Nibrassalbila Rosadi','K.H Ahmad Dahlan no 23 A','Setrika',to_date('12-04-2017','dd-mm-yyyy'));
+INSERT INTO karyawan VALUES ('K0009','Muhammad Auliaramadani','Jl. Kejawan Gebang no. 16','Setrika',to_date('12-04-2017','dd-mm-yyyy'));
+INSERT INTO karyawan VALUES ('K0010','Chendrasena Oemaryoga','Jalan Teknik Sipil Blok X 11 ITS Sukolilo, Surabaya','Cuci',to_date('13-04-2017','dd-mm-yyyy'));
+INSERT INTO karyawan VALUES ('K0011','Vinsensius Indra Suryanto','Jalan Teknik Komputer IV no. 144 Perumdos Blok U','Cuci',to_date('10-04-2017','dd-mm-yyyy'));
+INSERT INTO karyawan VALUES ('K0012','Fina Fitri Yunita','Apartment educity, Pakuwon City','Cuci',to_date('13-04-2017','dd-mm-yyyy'));
+INSERT INTO karyawan VALUES ('K0013','Deddy Aditya Pramana','Asrama Mahasiswa E-204','Setrika',to_date('13-04-2017','dd-mm-yyyy'));
+INSERT INTO karyawan VALUES ('K0014','M. Hazdi Kurniawan','Gebang Lor','Setrika',to_date('14-04-2017','dd-mm-yyyy'));
+INSERT INTO karyawan VALUES ('K0015','Alfian','Perumdos blok U no 85','Cuci',to_date('14-04-2017','dd-mm-yyyy'));
+INSERT INTO karyawan VALUES ('K0016','Ivander William','Jl Klampis Anom 2 no 73','Cuci',to_date('14-04-2017','dd-mm-yyyy'));
+INSERT INTO karyawan VALUES ('K0017','Muhammad Fauzan','Bumi Marina Emas','Cuci',to_date('15-04-2017','dd-mm-yyyy'));
+INSERT INTO karyawan VALUES ('K0018','Rifqi Mukti Wicaksana','Jl. Keputih Tegal Timur 3B blok D4','Setrika',to_date('15-04-2017','dd-mm-yyyy'));
+INSERT INTO karyawan VALUES ('K0019','Puja Rizki Deanda','Asrama ITS','Setrika',to_date('16-04-2017','dd-mm-yyyy'));
+INSERT INTO karyawan VALUES ('K0020','Muhammad Isa Senoaji','keputih tegal timur A4 37','Cuci',to_date('16-04-2017','dd-mm-yyyy'));
+
+--DML JENIS LAYANAN
+INSERT INTO jenis_layanan VALUES ('JL1','Cuci Basah/kg','5000');
+INSERT INTO jenis_layanan VALUES ('JL2','Cuci Kering/kg','4000');
+INSERT INTO jenis_layanan VALUES ('JL3','Cuci dan Setrika/kg','7000');
+INSERT INTO jenis_layanan VALUES ('JL4','Cuci Kilat/kg','11000');
+INSERT INTO jenis_layanan VALUES ('JL5','Bed Cover/kg','14000');
