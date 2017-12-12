@@ -35,3 +35,11 @@ INSERT INTO member_table VALUES ('M0034','Gilbert Lijaya Therry',to_date('30-03-
 INSERT INTO member_table VALUES ('M0035','Yolanda Hertita Pratama',to_date('09-03-1998','dd-mm-yyyy'),'Perumahan Dosen Blok U gang 2 no 26','089648491314','P',to_date('14-11-2017','dd-mm-yyyy'));
 --DONE MEMBER--
 
+--insert cabang
+insert into cabang values ('C0001','K0005','Wisma Permai IX No.1,Surabaya','0354188087');
+insert into cabang values ('C0001','K0010','Jl Mulyosari Utara IX No.1,Surabaya','0354005130');
+insert into cabang values ('C0001','K0015','Jl Wisma Pagesangan III No.35,Surabaya','0354819088');
+insert into cabang values ('C0001','K0024','Jl Jambangan Kebon Agung Tol No.03,Surabaya','0354228595');
+
+
+
