@@ -1,0 +1,59 @@
+create table member_table
+(
+  m_no        char(5) primary key,
+  m_nama      varchar(100),
+  m_tgllahir  date,
+  m_alamat    varchar(200),
+  m_telp      varchar(15),
+  m_jkel      char(1),
+  m_tgldaftar date
+);
+
+create table karyawan
+(
+  k_kode     char(5) primary key,
+  k_nama     varchar(100),
+  k_alamat   varchar(150),
+  k_bagian   varchar(50),
+  k_tglmasuk date
+);
+
+create table jenis_layanan
+(
+  j_id    char(3) primary key,
+  j_nama  varchar(100),
+  j_harga int
+);
+
+create table nota
+(
+  n_no        int primary key,
+  m_no        char(5),
+  k_kode      char(5),
+  n_tglmasuk  date,
+  n_tgljadi   date,
+  n_tglambil  date,
+  n_status    int,
+  kode_rak    char(3),
+  constraint fk_m_no foreign key (m_no) references member_table,
+  constraint fk_k_kode foreign key (k_kode) references karyawan
+);
+
+create table detil_nota
+(
+  n_no      int,
+  j_id      char(3),
+  dn_jumlah int,
+  constraint fk_n_no foreign key (n_no) references nota,
+  constraint fk_j_id foreign key (j_id) references jenis_layanan
+);
+
+create table cabang
+(
+  c_no char(5),
+  k_kode char(5),
+  c_lokasi varchar(50),
+  c_telp number,
+  constraint pk_cabang primary key (c_no), 
+  constraint fk_k_cabang foreign key (k_kode) REFERENCES karyawan
+);
