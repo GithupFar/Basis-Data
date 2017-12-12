@@ -1,3 +1,4 @@
+
 --DDL
 create table member_table
 (
@@ -21,6 +22,10 @@ create table karyawan
   c_no char(5),
   CONSTRAINT fk_c_no FOREIGN KEY (c_no) REFERENCES cabang
 );
+ALTER TABLE karyawan
+MODIFY k_bagian DEFAULT 'Manager';
+ALTER TABLE karyawan 
+MODIFY k_manager DEFAULT '-';
 
 create table jenis_layanan
 (
@@ -73,27 +78,79 @@ CREATE TABLE promo
 ALTER TABLE promo
 ADD CONSTRAINT pk_promo PRIMARY KEY (p_kode);
 
---DML
-INSERT INTO karyawan VALUES ('K0001','Muh. Taufiqulsadi','asrama gedung g 407','Cuci',to_date('09-04-2017','dd-mm-yyyy'));
-INSERT INTO karyawan VALUES ('K0002','Randi Noor Pasha','jl keputih tegal no 74','Cuci',to_date('10-04-2017','dd-mm-yyyy'));
-INSERT INTO karyawan VALUES ('K0003','Honesta Swandaru','Asrama Mahasiswa ITS Gedung B No. 104','Setrika',to_date('10-04-2017','dd-mm-yyyy'));
-INSERT INTO karyawan VALUES ('K0004','Aguel Satria Wijaya','Asrama ITS G 301','Setrika',to_date('11-04-2017','dd-mm-yyyy'));
-INSERT INTO karyawan VALUES ('K0005','Ghifaroza Rahmadiana','Jl. Manyar Sabrangan IX / 11','Cuci',to_date('11-04-2017','dd-mm-yyyy'));
-INSERT INTO karyawan VALUES ('K0006','Andika Andra','Keputih Gg Makam No 10A','Cuci',to_date('09-04-2017','dd-mm-yyyy'));
-INSERT INTO karyawan VALUES ('K0007','Firman Maulana','Rumdis TNI AL C59','Cuci',to_date('12-04-2017','dd-mm-yyyy'));
-INSERT INTO karyawan VALUES ('K0008','Nada Nibrassalbila Rosadi','K.H Ahmad Dahlan no 23 A','Setrika',to_date('12-04-2017','dd-mm-yyyy'));
-INSERT INTO karyawan VALUES ('K0009','Muhammad Auliaramadani','Jl. Kejawan Gebang no. 16','Setrika',to_date('12-04-2017','dd-mm-yyyy'));
-INSERT INTO karyawan VALUES ('K0010','Chendrasena Oemaryoga','Jalan Teknik Sipil Blok X 11 ITS Sukolilo, Surabaya','Cuci',to_date('13-04-2017','dd-mm-yyyy'));
-INSERT INTO karyawan VALUES ('K0011','Vinsensius Indra Suryanto','Jalan Teknik Komputer IV no. 144 Perumdos Blok U','Cuci',to_date('10-04-2017','dd-mm-yyyy'));
-INSERT INTO karyawan VALUES ('K0012','Fina Fitri Yunita','Apartment educity, Pakuwon City','Cuci',to_date('13-04-2017','dd-mm-yyyy'));
-INSERT INTO karyawan VALUES ('K0013','Deddy Aditya Pramana','Asrama Mahasiswa E-204','Setrika',to_date('13-04-2017','dd-mm-yyyy'));
-INSERT INTO karyawan VALUES ('K0014','M. Hazdi Kurniawan','Gebang Lor','Setrika',to_date('14-04-2017','dd-mm-yyyy'));
-INSERT INTO karyawan VALUES ('K0015','Alfian','Perumdos blok U no 85','Cuci',to_date('14-04-2017','dd-mm-yyyy'));
-INSERT INTO karyawan VALUES ('K0016','Ivander William','Jl Klampis Anom 2 no 73','Cuci',to_date('14-04-2017','dd-mm-yyyy'));
-INSERT INTO karyawan VALUES ('K0017','Muhammad Fauzan','Bumi Marina Emas','Cuci',to_date('15-04-2017','dd-mm-yyyy'));
-INSERT INTO karyawan VALUES ('K0018','Rifqi Mukti Wicaksana','Jl. Keputih Tegal Timur 3B blok D4','Setrika',to_date('15-04-2017','dd-mm-yyyy'));
-INSERT INTO karyawan VALUES ('K0019','Puja Rizki Deanda','Asrama ITS','Setrika',to_date('16-04-2017','dd-mm-yyyy'));
-INSERT INTO karyawan VALUES ('K0020','Muhammad Isa Senoaji','keputih tegal timur A4 37','Cuci',to_date('16-04-2017','dd-mm-yyyy'));
+/*use this if u need it
+DROP TABLE karyawan;
+DROP TABLE promo;
+DROP TABLE member_table;
+DROP TABLE jenis_layanan;
+DROP TABLE detil_nota;
+DROP TABLE nota;
+DROP TABLE cabang;
+/*
+DELETE FROM karyawan;
+DELETE FROM member_table;
+DELETE FROM promo;
+DELETE FROM jenis_layanan;
+*/
+--DML MEMBER
+INSERT INTO member_table VALUES ('M0001','Safira Vanillia Putri',to_date('16-07-1998','dd-mm-yyyy'),'Jl Teknik Pemukiman Blok D-8,Surabaya','081933888688','P',to_date('12-10-2017','dd-mm-yyyy'));
+INSERT INTO member_table VALUES ('M0002','Dimas Kamurapi',to_date('15-09-1997','dd-mm-yyyy'),'Jl Keputih Gang 2 No.27,Surayaba','085931363163','L',to_date('24-09-2017','dd-mm-yyyy'));
+INSERT INTO member_table VALUES ('M0003','John Harison',to_date('30-04-1999','dd-mm-yyyy'),'Jl. Gebang Lor No.5\1, Surabaya','081289887266','L',to_date('20-05-2017','dd-mm-yyyy'));
+INSERT INTO member_table VALUES ('M0004','Dewi Sekarini',to_date('06-04-1999','dd-mm-yyyy'),'Jl Margorejo IF No.39, Surabaya','082257601545','P',to_date('21-11-2017','dd-mm-yyyy'));
+INSERT INTO member_table VALUES ('M0005','Rifqi Ardia Ramadhan',to_date('14-01-1998','dd-mm-yyyy'),'Ngagel Mulyo VI/27, Surabaya','085730454300','L',to_date('20-06-2017','dd-mm-yyyy'));
+INSERT INTO member_table VALUES ('M0006','Rahardian K. Putra',to_date('04-06-1997','dd-mm-yyyy'),'Perumdos, Surabaya','088804862376','L',to_date('22-10-2017','dd-mm-yyyy'));
+INSERT INTO member_table VALUES ('M0007','Ubut Ekaputra',to_date('31-03-1998','dd-mm-yyyy'),'Jl. Gebang Wetan Gang 1 No. 1, Surabaya','089611266116','L',to_date('14-06-2017','dd-mm-yyyy'));
+INSERT INTO member_table VALUES ('M0008','Sal Zulal',to_date('16-11-1998','dd-mm-yyyy'),'Jl Sukolilo Kasih 1, Surabaya','087857814466','L',to_date('03-05-2017','dd-mm-yyyy'));
+INSERT INTO member_table VALUES ('M0009','Fafa Lailatul',to_date('07-06-1998','dd-mm-yyyy'),'Keputih Gg.2B/28 , Surabaya','085785953406','P',to_date('23-06-2017','dd-mm-yyyy'));
+INSERT INTO member_table VALUES ('M0010','Dandy Naufaldi',to_date('31-10-1998','dd-mm-yyyy'),'Jl. Mulyosari Mas C-8, Mulyorejo, Surabaya','081331187562','L',to_date('23-12-2017','dd-mm-yyyy'));
+INSERT INTO member_table VALUES ('M0011','Raden Teja Kusuma',to_date('16-08-1997','dd-mm-yyyy'),'Keputih Gang 3C No.2, Surabaya','085735096658','L',to_date('12-04-2017','dd-mm-yyyy'));
+INSERT INTO member_table VALUES ('M0012','Muhammad Raihan Anindita',to_date('27-05-1999','dd-mm-yyyy'),'Jl. Keputih timur I/11, Surabaya','089909876543','L',to_date('21-12-2017','dd-mm-yyyy'));
+INSERT INTO member_table VALUES ('M0013','Nuzha Musyafira',to_date('20-05-2000','dd-mm-yyyy'),'Jl. Keputih No.48B, Surabaya','089608555029','P',to_date('22-12-2017','dd-mm-yyyy'));
+INSERT INTO member_table VALUES ('M0014','Navinda Meutia',to_date('29-08-1998','dd-mm-yyyy'),'Perumdos ITS Block U NO.132, Surabaya','085732706280','P',to_date('12-11-2017','dd-mm-yyyy'));
+INSERT INTO member_table VALUES ('M0015','Hafid Sriwijaya B',to_date('22-05-1998','dd-mm-yyyy'),'Keputih Tegal Timur A4/37.','082226217755','L',to_date('12-10-2017','dd-mm-yyyy'));
+INSERT INTO member_table VALUES ('M0016','Modista Garsia',to_date('30-01-1998','dd-mm-yyyy'),'Mulyosari Utara IX/58, Surabaya','081330515755','P',to_date('07-12-2017','dd-mm-yyyy'));
+INSERT INTO member_table VALUES ('M0017','Desy Nilasari',to_date('19-07-1997','dd-mm-yyyy'),'Jl. Hayam Wuruk No 21, Surabaya','089909876543','P',to_date('14-04-2017','dd-mm-yyyy'));
+INSERT INTO member_table VALUES ('M0018','Aisyah Muswar',to_date('05-11-1998','dd-mm-yyyy'),'Asrama ITS Blok H','085696965715','P',to_date('01-04-2017','dd-mm-yyyy'));
+INSERT INTO member_table VALUES ('M0019','Rifka Annisa',to_date('05-06-1997','dd-mm-yyyy'),'Perumdos Blok U Jalan Teknik Komputer Gang 4 nomor 130','081559921412','P',to_date('07-06-2017','dd-mm-yyyy'));
+INSERT INTO member_table VALUES ('M0020','Rizvi Sofbrina',to_date('12-01-1999','dd-mm-yyyy'),'Asrama ITS Blok H','085260216926','P',to_date('13-04-2017','dd-mm-yyyy'));
+INSERT INTO member_table VALUES ('M0021','Mohammad Nafis Naufally',to_date('15-07-1999','dd-mm-yyyy'),'Perumdos ITS Blok U no 4','085646098749','L',to_date('12-08-2017','dd-mm-yyyy'));
+INSERT INTO member_table VALUES ('M0022','Yasinta Romadhona',to_date('02-01-1998','dd-mm-yyyy'),'Perumdos ITS Blok U no 124','081350514334','P',to_date('10-07-2017','dd-mm-yyyy'));
+INSERT INTO member_table VALUES ('M0023','Cornelia Natasha',to_date('28-05-1998','dd-mm-yyyy'),'Mulyosari Utara XI/51','081218413885','P',to_date('10-09-2017','dd-mm-yyyy'));
+INSERT INTO member_table VALUES ('M0024','Ivanda Zevi Amalia',to_date('23-08-1998','dd-mm-yyyy'),'Perumahan Dosen ITS blok U no 35','082214562412','P',to_date('07-11-2017','dd-mm-yyyy'));
+INSERT INTO member_table VALUES ('M0025','Daniel Lumbantobing',to_date('16-06-1998','dd-mm-yyyy'),'Perumdos Blok U-69','082365125818','L',to_date('20-12-2017','dd-mm-yyyy'));
+INSERT INTO member_table VALUES ('M0026','Muhammad Arrafi',to_date('11-03-1998','dd-mm-yyyy'),'Perumdos Blok T 23','087784606677','L',to_date('20-12-2017','dd-mm-yyyy'));
+INSERT INTO member_table VALUES ('M0027','Mikael Mahendra Buyung Wirakusuma',to_date('05-09-1997','dd-mm-yyyy'),'JL. Kanoman 2 no 21 Gebang Lor','085742885059','L',to_date('22-12-2017','dd-mm-yyyy'));
+INSERT INTO member_table VALUES ('M0028','Alcredo Simanjuntak',to_date('08-06-1998','dd-mm-yyyy'),'Jl. Keputih Gang 1D no 11','082272521290','L',to_date('23-09-2017','dd-mm-yyyy'));
+INSERT INTO member_table VALUES ('M0029','Marde Fasma Ul Aza',to_date('06-08-1998','dd-mm-yyyy'),'Asrama ITS Gedung G 226','089615125347','L',to_date('20-08-2017','dd-mm-yyyy'));
+INSERT INTO member_table VALUES ('M0030','Aidil Abdilah Suyudi',to_date('20-09-1998','dd-mm-yyyy'),'Jl. Keputih Utara, Keputih Printis 1','085278515137','L',to_date('11-04-2017','dd-mm-yyyy'));
+INSERT INTO member_table VALUES ('M0031','Ghannie Wijaya',to_date('20-03-1998','dd-mm-yyyy'),'Gebang Wetan Gang 1 no 1','087836284699','L',to_date('15-04-2017','dd-mm-yyyy'));
+INSERT INTO member_table VALUES ('M0032','Puguh Santosa Dwiatmaja',to_date('09-02-2000','dd-mm-yyyy'),'Keputih Gang 1 C no 9','085249135671','L',to_date('15-04-2017','dd-mm-yyyy'));
+INSERT INTO member_table VALUES ('M0033','Muhammad Farras Rahmatullah',to_date('16-12-1997','dd-mm-yyyy'),'Palm Spring Regency B-12, Jambangan, Surabaya','08113306636','L',to_date('29-09-2017','dd-mm-yyyy'));
+INSERT INTO member_table VALUES ('M0034','Gilbert Lijaya Therry',to_date('30-03-1999','dd-mm-yyyy'),'Asrama Mahasisa Kamar G 407','081354882755','L',to_date('17-08-2017','dd-mm-yyyy'));
+INSERT INTO member_table VALUES ('M0035','Yolanda Hertita Pratama',to_date('09-03-1998','dd-mm-yyyy'),'Perumahan Dosen Blok U gang 2 no 26','089648491314','P',to_date('14-11-2017','dd-mm-yyyy'));
+
+
+--DML KARYAWAN
+INSERT INTO karyawan VALUES ('K0001','Muh. Taufiqulsadi','asrama gedung g 407','Cuci',to_date('09-04-2017','dd-mm-yyyy'), 'K0005', 'C0001');
+INSERT INTO karyawan VALUES ('K0002','Randi Noor Pasha','jl keputih tegal no 74','Cuci',to_date('10-04-2017','dd-mm-yyyy'), 'K0005', 'C0001');
+INSERT INTO karyawan VALUES ('K0003','Honesta Swandaru','Asrama Mahasiswa ITS Gedung B No. 104','Setrika',to_date('10-04-2017','dd-mm-yyyy'), 'K0005', 'C0001');
+INSERT INTO karyawan VALUES ('K0004','Aguel Satria Wijaya','Asrama ITS G 301','Setrika',to_date('11-04-2017','dd-mm-yyyy'), 'K0005', 'C0001');
+INSERT INTO karyawan VALUES ('K0005','Ghifaroza Rahmadiana','Jl. Manyar Sabrangan IX / 11',NULL,to_date('11-04-2017','dd-mm-yyyy'),NULL, 'C0001');
+INSERT INTO karyawan VALUES ('K0006','Andika Andra','Keputih Gg Makam No 10A','Cuci',to_date('09-04-2017','dd-mm-yyyy'), 'K0010', 'C0002');
+INSERT INTO karyawan VALUES ('K0007','Firman Maulana','Rumdis TNI AL C59','Cuci',to_date('12-04-2017','dd-mm-yyyy'), 'K0010', 'C0002');
+INSERT INTO karyawan VALUES ('K0008','Nada Nibrassalbila Rosadi','K.H Ahmad Dahlan no 23 A','Setrika',to_date('12-04-2017','dd-mm-yyyy'), 'K0010', 'C0002');
+INSERT INTO karyawan VALUES ('K0009','Muhammad Auliaramadani','Jl. Kejawan Gebang no. 16','Setrika',to_date('12-04-2017','dd-mm-yyyy'), 'K0010', 'C0002');
+INSERT INTO karyawan VALUES ('K0010','Chendrasena Oemaryoga','Jalan Teknik Sipil Blok X 11 ITS Sukolilo, Surabaya',NULL,to_date('13-04-2017','dd-mm-yyyy'),NULL, 'C0002');
+INSERT INTO karyawan VALUES ('K0011','Vinsensius Indra Suryanto','Jalan Teknik Komputer IV no. 144 Perumdos Blok U','Cuci',to_date('10-04-2017','dd-mm-yyyy'), 'K0015', 'C0003');
+INSERT INTO karyawan VALUES ('K0012','Fina Fitri Yunita','Apartment educity, Pakuwon City','Cuci',to_date('13-04-2017','dd-mm-yyyy'), 'K0015', 'C0003');
+INSERT INTO karyawan VALUES ('K0013','Deddy Aditya Pramana','Asrama Mahasiswa E-204','Setrika',to_date('13-04-2017','dd-mm-yyyy'), 'K0015', 'C0003');
+INSERT INTO karyawan VALUES ('K0014','M. Hazdi Kurniawan','Gebang Lor','Setrika',to_date('14-04-2017','dd-mm-yyyy'), 'K0015', 'C0003');
+INSERT INTO karyawan VALUES ('K0015','Alfian','Perumdos blok U no 85',NULL,to_date('14-04-2017','dd-mm-yyyy'),NULL, 'C0003');
+INSERT INTO karyawan VALUES ('K0016','Ivander William','Jl Klampis Anom 2 no 73','Cuci',to_date('14-04-2017','dd-mm-yyyy'), 'K0020', 'C0004');
+INSERT INTO karyawan VALUES ('K0017','Muhammad Fauzan','Bumi Marina Emas','Cuci',to_date('15-04-2017','dd-mm-yyyy'), 'K0020', 'C0004');
+INSERT INTO karyawan VALUES ('K0018','Rifqi Mukti Wicaksana','Jl. Keputih Tegal Timur 3B blok D4','Setrika',to_date('15-04-2017','dd-mm-yyyy'), 'K0020', 'C0004');
+INSERT INTO karyawan VALUES ('K0019','Puja Rizki Deanda','Asrama ITS','Setrika',to_date('16-04-2017','dd-mm-yyyy'), 'K0020', 'C0004');
+INSERT INTO karyawan VALUES ('K0020','Muhammad Isa Senoaji','keputih tegal timur A4 37',NULL,to_date('16-04-2017','dd-mm-yyyy'), NULL, 'C0004');
 
 --DML JENIS LAYANAN
 INSERT INTO jenis_layanan VALUES ('JL1','Cuci Basah/kg','5000');
@@ -102,9 +159,26 @@ INSERT INTO jenis_layanan VALUES ('JL3','Cuci dan Setrika/kg','7000');
 INSERT INTO jenis_layanan VALUES ('JL4','Cuci Kilat/kg','11000');
 INSERT INTO jenis_layanan VALUES ('JL5','Bed Cover/kg','14000');
 
---DML PROMO
+--DML NOTA belom jadi
+INSERT INTO nota VALUES ('1','M0001','K0001',to_date('13-04-2017','dd-mm-yyyy'),to_date('16-04-2017','dd-mm-yyyy'),to_date('16-04-2017','dd-mm-yyyy'),'1','R01');
+INSERT INTO nota VALUES ('2','M0002','K0002',to_date('13-04-2017','dd-mm-yyyy'),to_date('16-04-2017','dd-mm-yyyy'),to_date('17-04-2017','dd-mm-yyyy'),'1','R02');
+INSERT INTO nota VALUES ('3','M0003','K0005',to_date('02-05-2017','dd-mm-yyyy'),to_date('05-05-2017','dd-mm-yyyy'),to_date('05-05-2017','dd-mm-yyyy'),'1','R01');
+INSERT INTO nota VALUES ('4','M0004','K0004',to_date('07-05-2017','dd-mm-yyyy'),to_date('10-05-2017','dd-mm-yyyy'),to_date('11-05-2017','dd-mm-yyyy'),'1','R02');
+INSERT INTO nota VALUES ('5','M0005','K0003',to_date('13-05-2017','dd-mm-yyyy'),to_date('16-05-2017','dd-mm-yyyy'),to_date('16-05-2017','dd-mm-yyyy'),'1','R02');
+INSERT INTO nota VALUES ('6','M0002','K0001',to_date('13-05-2017','dd-mm-yyyy'),to_date('16-05-2017','dd-mm-yyyy'),to_date('16-05-2017','dd-mm-yyyy'),'0','R02');
+INSERT INTO nota VALUES ('7','M0005','K0001',to_date('13-05-2017','dd-mm-yyyy'),to_date('16-05-2017','dd-mm-yyyy'),to_date('16-05-2017','dd-mm-yyyy'),'0','R02');
+
+
+--DML Promo
+--DELETE FROM promo WHERE p_kode = 'P0001';
 INSERT INTO promo VALUES ('P0001', 'Diskon Akhir Tahun', '0.2', to_date('15-12-2017', 'dd-mm-yyyy'), to_date('30-12-2017', 'dd-mm-yyyy'));
 INSERT INTO promo VALUES ('P0002', 'Diskon Agustusan', '0.1', to_date('10-08-2017', 'dd-mm-yyyy'), to_date('24-08-2017', 'dd-mm-yyyy'));
 INSERT INTO promo VALUES ('P0003', 'Diskon Hari Ibu', '0.3', to_date('18-12-2017', 'dd-mm-yyyy'), to_date('23-12-2017', 'dd-mm-yyyy'));
 INSERT INTO promo VALUES ('P0004', 'Diskon Hari Kartini', '0.3',to_date('17-04-2017', 'dd-mm-yyyy'), to_date('22-04-2017', 'dd-mm-yyyy'));
 INSERT INTO promo VALUES ('P0005', 'Diskon Hari Buruh', '0.2', to_date('21-04-2017', 'dd-mm-yyyy'), to_date('01-05-2017','dd-mm-yyyy'));
+
+--DML CABANG
+insert into cabang values ('C0001','K0005','Wisma Permai IX No.1,Surabaya','0354188087');
+insert into cabang values ('C0002','K0010','Jl Mulyosari Utara IX No.1,Surabaya','0354005130');
+insert into cabang values ('C0003','K0015','Jl Wisma Pagesangan III No.35,Surabaya','0354819088');
+insert into cabang values ('C0004','K0020','Jl Jambangan Kebon Agung Tol No.03,Surabaya','0354228595');
