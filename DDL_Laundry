@@ -1,0 +1,85 @@
+--DDL
+create table member_table(
+  m_no        char(5),
+  m_nama      varchar(100),
+  m_tgllahir  date,
+  m_alamat    varchar(200),
+  m_telp      varchar(15),
+  m_jkel      char(1),
+  m_tgldaftar date,
+  constraint pk_member primary key (m_no)
+);
+
+create table karyawan(
+  k_kode     char(5),
+  k_nama     varchar(100),
+  k_alamat   varchar(150),
+  k_bagian   varchar(50) default 'manager',
+  k_tglmasuk date,
+  k_manager  char(5) default '-',
+  c_no       char(5),
+  constraint pk_karyawan primary key (k_kode),
+  CONSTRAINT fk_c_no FOREIGN KEY (c_no) REFERENCES cabang(c_no)
+);
+
+create table jenis_layanan(
+  j_id    char(3),
+  j_nama  varchar(100),
+  j_harga int,
+  constraint pk_jl primary key (j_id)
+);
+
+create table cabang
+(
+  c_no char(5),
+  c_manager char(5),
+  c_lokasi varchar(50),
+  c_telp varchar(15),
+  constraint pk_cabang primary key (c_no)
+);
+
+CREATE TABLE promo
+(
+  p_kode char(5),  --primary key
+  p_nama varchar(30),
+  p_potong decimal(5,2),
+  p_tglmulai date,
+  p_tglselesai date,
+  constraint pk_promo primary key (p_kode)
+);
+
+create table nota(
+  n_no        int ,
+  m_no        char(5),
+  k_masuk     char(5), --karyawan di cabang asal
+  k_ambil     char(5), --karyawan di cabang pemroses
+  n_tglmasuk  date,
+  n_tgljadi   date,
+  n_tglambil  date,
+  n_status    int,
+  kode_rak    char(3),
+  c_masuk     char(5), --cabang asal 
+  c_ambil     char(5), --cabang pemroses
+  constraint pk_nota primary key (n_no),
+  constraint fk_m_no foreign key (m_no) references member_table(m_no),
+  --constraint fk_k_kode foreign key (k_kode) references karyawan(k_kode)
+);
+
+create table detil_nota(
+  n_no      int,
+  j_id      char(3),
+  p_kode    char(5) default '-',
+  dn_jumlahasli int,  --jumlahsebelumpromo
+  dn_jumlahakhir int default '-', --jumlahsetelahpromo
+  constraint fk_n_no foreign key (n_no) references nota(n_no),
+  constraint fk_j_id foreign key (j_id) references jenis_layanan(j_id)
+);
+
+--use this to drop table
+DROP TABLE detil_nota;
+DROP TABLE nota;
+DROP TABLE karyawan;
+DROP TABLE promo;
+DROP TABLE cabang;
+DROP TABLE member_table;
+DROP TABLE jenis_layanan;
