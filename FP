@@ -1,3 +1,4 @@
+--DDL
 create table member_table
 (
   m_no        char(5) primary key,
@@ -15,7 +16,10 @@ create table karyawan
   k_nama     varchar(100),
   k_alamat   varchar(150),
   k_bagian   varchar(50),
-  k_tglmasuk date
+  k_tglmasuk date,
+  k_manager char(5),
+  c_no char(5),
+  CONSTRAINT fk_c_no FOREIGN KEY (c_no) REFERENCES cabang
 );
 
 create table jenis_layanan
@@ -51,12 +55,23 @@ create table detil_nota
 create table cabang
 (
   c_no char(5),
-  k_kode char(5),
+  c_manager char(5),
   c_lokasi varchar(50),
   c_telp number,
-  constraint pk_cabang primary key (c_no), 
-  constraint fk_k_cabang foreign key (k_kode) REFERENCES karyawan
+  constraint pk_cabang primary key (c_no)
 );
+--drop table cabang;
+
+CREATE TABLE promo
+(
+  p_kode char(5),
+  p_nama varchar(30),
+  p_potong decimal(5,2),
+  p_tglmulai date,
+  p_tglselesai date
+);
+ALTER TABLE promo
+ADD CONSTRAINT pk_promo PRIMARY KEY (p_kode);
 
 --DML
 INSERT INTO karyawan VALUES ('K0001','Muh. Taufiqulsadi','asrama gedung g 407','Cuci',to_date('09-04-2017','dd-mm-yyyy'));
