@@ -38,7 +38,7 @@ create table cabang
   constraint pk_cabang primary key (c_no)
 );
 
-CREATE TABLE promo
+create table promo
 (
   p_kode char(5),  --primary key
   p_nama varchar(30),
@@ -62,7 +62,10 @@ create table nota(
   c_ambil     char(5), --cabang pemroses
   constraint pk_nota primary key (n_no),
   constraint fk_m_no foreign key (m_no) references member_table(m_no),
-  --constraint fk_k_kode foreign key (k_kode) references karyawan(k_kode)
+  constraint fk_k_masuk foreign key (k_masuk) references karyawan(k_kode), --bisa jadiin dia fk ganda (omaygad)
+  constraint fk_c_masuk foreign key (c_masuk) references cabang(c_no), --bisa jadiin dia fk ganda (omaygad)
+  constraint fk_k_ambil foreign key (k_ambil) references karyawan(k_kode), --bisa jadiin dia fk ganda (omaygad)
+  constraint fk_c_ambil foreign key (c_ambil) references cabang(c_no) --bisa jadiin dia fk ganda (omaygad)
 );
 
 create table detil_nota(
