@@ -53,7 +53,7 @@ create table nota(
   m_no        char(5),
   n_tglmasuk  date,
   n_tgljadi   date,
-  n_tglambil  date,
+  n_tglambil  date default null,
   n_status    int,
   kode_rak    char(3),
   k_masuk     char(5), --karyawan di cabang asal
