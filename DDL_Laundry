@@ -51,14 +51,14 @@ create table promo
 create table nota(
   n_no        int ,
   m_no        char(5),
-  k_masuk     char(5), --karyawan di cabang asal
-  k_ambil     char(5), --karyawan di cabang pemroses
   n_tglmasuk  date,
   n_tgljadi   date,
   n_tglambil  date,
   n_status    int,
   kode_rak    char(3),
+  k_masuk     char(5), --karyawan di cabang asal
   c_masuk     char(5), --cabang asal 
+  k_ambil     char(5), --karyawan di cabang pemroses
   c_ambil     char(5), --cabang pemroses
   constraint pk_nota primary key (n_no),
   constraint fk_m_no foreign key (m_no) references member_table(m_no),
@@ -73,7 +73,7 @@ create table detil_nota(
   j_id      char(3),
   p_kode    char(5) default '-',
   dn_jumlahasli int,  --jumlahsebelumpromo
-  dn_jumlahakhir int default '-', --jumlahsetelahpromo
+  dn_jumlahakhir int, --jumlahsetelahpromo
   constraint fk_n_no foreign key (n_no) references nota(n_no),
   constraint fk_j_id foreign key (j_id) references jenis_layanan(j_id)
 );
