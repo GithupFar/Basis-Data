@@ -1,14 +1,14 @@
 
 --DML MEMBER
-INSERT INTO member_table VALUES ('M0001','Safira Vanillia Putri',to_date('16-07-1998','dd-mm-yyyy'),'Jl Teknik Pemukiman Blok D-8,Surabaya','081933888688','P',to_date('07-04-2017','dd-mm-yyyy'));
-INSERT INTO member_table VALUES ('M0002','Dimas Kamurapi',to_date('15-09-1997','dd-mm-yyyy'),'Jl Keputih Gang 2 No.27,Surayaba','085931363163','L',to_date('12-04-2017','dd-mm-yyyy'));
-INSERT INTO member_table VALUES ('M0003','John Harison',to_date('30-04-1999','dd-mm-yyyy'),'Jl. Gebang Lor No.5\1, Surabaya','081289887266','L',to_date('20-04-2017','dd-mm-yyyy'));
-INSERT INTO member_table VALUES ('M0004','Dewi Sekarini',to_date('06-04-1999','dd-mm-yyyy'),'Jl Margorejo IF No.39, Surabaya','082257601545','P',to_date('21-04-2017','dd-mm-yyyy'));
-INSERT INTO member_table VALUES ('M0005','Rifqi Ardia Ramadhan',to_date('14-01-1998','dd-mm-yyyy'),'Ngagel Mulyo VI/27, Surabaya','085730454300','L',to_date('26-04-2017','dd-mm-yyyy'));
-INSERT INTO member_table VALUES ('M0006','Rahardian K. Putra',to_date('04-06-1997','dd-mm-yyyy'),'Perumdos, Surabaya','088804862376','L',to_date('29-04-2017','dd-mm-yyyy'));
-INSERT INTO member_table VALUES ('M0007','Ubut Ekaputra',to_date('31-03-1998','dd-mm-yyyy'),'Jl. Gebang Wetan Gang 1 No. 1, Surabaya','089611266116','L',to_date('09-05-2017','dd-mm-yyyy'));
-INSERT INTO member_table VALUES ('M0008','Sal Zulal',to_date('16-11-1998','dd-mm-yyyy'),'Jl Sukolilo Kasih 1, Surabaya','087857814466','L',to_date('13-05-2017','dd-mm-yyyy'));
-INSERT INTO member_table VALUES ('M0009','Fafa Lailatul',to_date('07-06-1998','dd-mm-yyyy'),'Keputih Gg.2B/28 , Surabaya','085785953406','P',to_date('19-05-2017','dd-mm-yyyy'));
+INSERT INTO member_table VALUES ('M0001','Safira Vanillia Putri',to_date('16-07-1998','dd-mm-yyyy'),'Jl Teknik Pemukiman Blok D-8,Surabaya','081933888688','P',to_date('07-05-2017','dd-mm-yyyy'));
+INSERT INTO member_table VALUES ('M0002','Dimas Kamurapi',to_date('15-09-1997','dd-mm-yyyy'),'Jl Keputih Gang 2 No.27,Surayaba','085931363163','L',to_date('09-05-2017','dd-mm-yyyy'));
+INSERT INTO member_table VALUES ('M0003','John Harison',to_date('30-04-1999','dd-mm-yyyy'),'Jl. Gebang Lor No.5\1, Surabaya','081289887266','L',to_date('12-05-2017','dd-mm-yyyy'));
+INSERT INTO member_table VALUES ('M0004','Dewi Sekarini',to_date('06-04-1999','dd-mm-yyyy'),'Jl Margorejo IF No.39, Surabaya','082257601545','P',to_date('17-05-2017','dd-mm-yyyy'));
+INSERT INTO member_table VALUES ('M0005','Rifqi Ardia Ramadhan',to_date('14-01-1998','dd-mm-yyyy'),'Ngagel Mulyo VI/27, Surabaya','085730454300','L',to_date('18-05-2017','dd-mm-yyyy'));
+INSERT INTO member_table VALUES ('M0006','Rahardian K. Putra',to_date('04-06-1997','dd-mm-yyyy'),'Perumdos, Surabaya','088804862376','L',to_date('19-05-2017','dd-mm-yyyy'));
+INSERT INTO member_table VALUES ('M0007','Ubut Ekaputra',to_date('31-03-1998','dd-mm-yyyy'),'Jl. Gebang Wetan Gang 1 No. 1, Surabaya','089611266116','L',to_date('20-05-2017','dd-mm-yyyy'));
+INSERT INTO member_table VALUES ('M0008','Sal Zulal',to_date('16-11-1998','dd-mm-yyyy'),'Jl Sukolilo Kasih 1, Surabaya','087857814466','L',to_date('21-05-2017','dd-mm-yyyy'));
+INSERT INTO member_table VALUES ('M0009','Fafa Lailatul',to_date('07-06-1998','dd-mm-yyyy'),'Keputih Gg.2B/28 , Surabaya','085785953406','P',to_date('22-05-2017','dd-mm-yyyy'));
 INSERT INTO member_table VALUES ('M0010','Dandy Naufaldi',to_date('31-10-1998','dd-mm-yyyy'),'Jl. Mulyosari Mas C-8, Mulyorejo, Surabaya','081331187562','L',to_date('25-05-2017','dd-mm-yyyy'));
 INSERT INTO member_table VALUES ('M0011','Raden Teja Kusuma',to_date('16-08-1997','dd-mm-yyyy'),'Keputih Gang 3C No.2, Surabaya','085735096658','L',to_date('07-06-2017','dd-mm-yyyy'));
 INSERT INTO member_table VALUES ('M0012','Muhammad Raihan Anindita',to_date('27-05-1999','dd-mm-yyyy'),'Jl. Keputih timur I/11, Surabaya','089909876543','L',to_date('11-06-2017','dd-mm-yyyy'));
