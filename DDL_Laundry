@@ -10,6 +10,15 @@ create table member_table(
   constraint pk_member primary key (m_no)
 );
 
+create table cabang
+(
+  c_no char(5),
+  c_manager char(5),
+  c_lokasi varchar(50),
+  c_telp varchar(15),
+  constraint pk_cabang primary key (c_no)
+);
+
 create table karyawan(
   k_kode     char(5),
   k_nama     varchar(100),
@@ -29,16 +38,7 @@ create table jenis_layanan(
   constraint pk_jl primary key (j_id)
 );
 
-create table cabang
-(
-  c_no char(5),
-  c_manager char(5),
-  c_lokasi varchar(50),
-  c_telp varchar(15),
-  constraint pk_cabang primary key (c_no)
-);
-
-create table promo
+CREATE TABLE promo
 (
   p_kode char(5),  --primary key
   p_nama varchar(30),
@@ -49,7 +49,7 @@ create table promo
 );
 
 create table nota(
-  n_no        int ,
+  n_no        char(5),
   m_no        char(5),
   n_tglmasuk  date,
   n_tgljadi   date,
@@ -69,13 +69,14 @@ create table nota(
 );
 
 create table detil_nota(
-  n_no      int,
+  n_no      char(5),
   j_id      char(3),
-  p_kode    char(5) default '-',
+  p_kode    char(5),
   dn_jumlahasli int,  --jumlahsebelumpromo
   dn_jumlahakhir int, --jumlahsetelahpromo
   constraint fk_n_no foreign key (n_no) references nota(n_no),
-  constraint fk_j_id foreign key (j_id) references jenis_layanan(j_id)
+  constraint fk_j_id foreign key (j_id) references jenis_layanan(j_id),
+  constraint fk_p_kode foreign key (p_kode) references promo(p_kode)
 );
 
 --use this to drop table
