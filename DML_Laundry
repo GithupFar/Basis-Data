@@ -274,3 +274,242 @@ insert into dn_harga values ('N0097',null,30000,30000);
 insert into dn_harga values ('N0098',null,39000,39000);
 insert into dn_harga values ('N0099',null,28000,28000);
 insert into dn_harga values ('N0100',null,32000,32000);
+
+--PUNYA NADA------------------------------------------------
+
+--DML nota
+--MARET
+INSERT INTO nota VALUES ('N0021', 'M0005', to_date('01-03-2017', 'dd-mm-yyyy'), to_date('05-03-2017', 'dd-mm-yyyy'), to_date('06-03-2017', 'dd-mm-yyyy'), 1, 'R01', 'K0011', 'C0003', 'K0011', 'C0003');--cuci kering
+INSERT INTO nota VALUES ('N0022', 'M0007', to_date('01-03-2017', 'dd-mm-yyyy'), to_date('06-03-2017', 'dd-mm-yyyy'), to_date('06-03-2017', 'dd-mm-yyyy'), 1, 'R02', 'K0012', 'C0003', 'K0012', 'C0003');--cuci setrika
+INSERT INTO nota VALUES ('N0023', 'M0001', to_date('03-03-2017', 'dd-mm-yyyy'), to_date('10-03-2017', 'dd-mm-yyyy'), to_date('13-03-2017', 'dd-mm-yyyy'), 1, 'R01', 'K0016', 'C0004', 'K0016', 'C0004');--bed cover
+INSERT INTO nota VALUES ('N0024', 'M0010', to_date('06-03-2017', 'dd-mm-yyyy'), to_date('09-03-2017', 'dd-mm-yyyy'), to_date('06-03-2017', 'dd-mm-yyyy'), 1, 'R01', 'K0001', 'C0001', 'K0001', 'C0001');--cuci basah
+INSERT INTO nota VALUES ('N0025', 'M0020', to_date('10-03-2017', 'dd-mm-yyyy'), to_date('17-03-2017', 'dd-mm-yyyy'), to_date('17-03-2017', 'dd-mm-yyyy'), 1, 'R02', 'K0017', 'C0004', 'K0017', 'C0004');--bed cover
+INSERT INTO nota VALUES ('N0026', 'M0021', to_date('13-03-2017', 'dd-mm-yyyy'), to_date('18-03-2017', 'dd-mm-yyyy'), to_date('20-03-2017', 'dd-mm-yyyy'), 1, 'R03', 'K0007', 'C0002', 'K0007', 'C0002');--cuci kering
+INSERT INTO nota VALUES ('N0027', 'M0013', to_date('14-03-2017', 'dd-mm-yyyy'), to_date('17-03-2017', 'dd-mm-yyyy'), to_date('20-03-2017', 'dd-mm-yyyy'), 1, 'R01', 'K0002', 'C0001', 'K0002', 'C0001');--cuci kilat
+INSERT INTO nota VALUES ('N0028', 'M0014', to_date('17-03-2017', 'dd-mm-yyyy'), to_date('21-03-2017', 'dd-mm-yyyy'), to_date('22-03-2017', 'dd-mm-yyyy'), 1, 'R01', 'K0008', 'C0002', 'K0008', 'C0002');--cuci kering
+INSERT INTO nota VALUES ('N0029', 'M0030', to_date('17-03-2017', 'dd-mm-yyyy'), to_date('24-03-2017', 'dd-mm-yyyy'), to_date('27-03-2017', 'dd-mm-yyyy'), 1, 'R03', 'K0009', 'C0002', 'K0016', 'C0004');--bed cover
+INSERT INTO nota VALUES ('N0030', 'M0034', to_date('21-03-2017', 'dd-mm-yyyy'), to_date('26-03-2017', 'dd-mm-yyyy'), to_date('30-03-2017', 'dd-mm-yyyy'), 1, 'R02', 'K0013', 'C0003', 'K0002', 'C0001');--cuci setrika
+--APRIL
+insert into nota values ('N0031','M0010',to_date('01-04-2017','dd-mm-yyyy'),to_date('04-04-2017','dd-mm-yyyy'),to_date('05-04-2017','dd-mm-yyyy'),1,'R01','K0001','C0001','K0002','C0001'); --cb
+insert into nota values ('N0032','M0032',to_date('03-04-2017','dd-mm-yyyy'),to_date('06-04-2017','dd-mm-yyyy'),to_date('06-04-2017','dd-mm-yyyy'),1,'R02','K0002','C0001','K0003','C0001');
+insert into nota values ('N0033','M0033',to_date('04-04-2017','dd-mm-yyyy'),to_date('07-04-2017','dd-mm-yyyy'),to_date('07-04-2017','dd-mm-yyyy'),1,'R01','K0003','C0001','K0002','C0001');
+insert into nota values ('N0034','M0024',to_date('05-04-2017','dd-mm-yyyy'),to_date('09-04-2017','dd-mm-yyyy'),to_date('09-04-2017','dd-mm-yyyy'),1,'R02','K0004','C0001','K0004','C0001'); --ck
+insert into nota values ('N0035','M0015',to_date('06-04-2017','dd-mm-yyyy'),to_date('10-04-2017','dd-mm-yyyy'),to_date('11-04-2017','dd-mm-yyyy'),1,'R03','K0003','C0001','K0001','C0001');
+insert into nota values ('N0036','M0033',to_date('07-04-2017','dd-mm-yyyy'),to_date('11-04-2017','dd-mm-yyyy'),to_date('11-04-2017','dd-mm-yyyy'),1,'R04','K0002','C0001','K0002','C0001');
+insert into nota values ('N0037','M0034',to_date('10-04-2017','dd-mm-yyyy'),to_date('13-04-2017','dd-mm-yyyy'),to_date('14-04-2017','dd-mm-yyyy'),1,'R05','K0003','C0001','K0004','C0001'); --cc
+insert into nota values ('N0038','M0014',to_date('11-04-2017','dd-mm-yyyy'),to_date('18-04-2017','dd-mm-yyyy'),to_date('18-04-2017','dd-mm-yyyy'),1,'R02','K0008','C0002','K0006','C0002');--bc
+insert into nota values ('N0039','M0015',to_date('20-04-2017','dd-mm-yyyy'),to_date('27-04-2017','dd-mm-yyyy'),to_date('28-04-2017','dd-mm-yyyy'),1,'R03','K0007','C0002','K0009','C0002');--bc, ada promo
+insert into nota values ('N0040','M0016',to_date('21-04-2017','dd-mm-yyyy'),to_date('24-04-2017','dd-mm-yyyy'),to_date('25-04-2017','dd-mm-yyyy'),1,'R01','K0009','C0002','K0002','C0001'); --cb, ada promo
+--JULI
+insert into nota values ('N0061','M0008',to_date('03-07-2017','dd-mm-yyyy'),to_date('07-07-2017','dd-mm-yyyy'),to_date('07-07-2017','dd-mm-yyyy'),1,'R01','K0006','C0002','K0006','C0002');--cc
+insert into nota values ('N0062','M0009',to_date('04-07-2017','dd-mm-yyyy'),to_date('07-07-2017','dd-mm-yyyy'),to_date('10-07-2017','dd-mm-yyyy'),1,'R02','K0009','C0002','K0007','C0002');
+insert into nota values ('N0063','M0010',to_date('04-07-2017','dd-mm-yyyy'),to_date('09-07-2017','dd-mm-yyyy'),to_date('10-07-2017','dd-mm-yyyy'),1,'R03','K0007','C0002','K0007','C0002'); --cs
+insert into nota values ('N0064','M0011',to_date('05-07-2017','dd-mm-yyyy'),to_date('10-07-2017','dd-mm-yyyy'),to_date('13-07-2017','dd-mm-yyyy'),1,'R04','K0008','C0002','K0008','C0002');
+insert into nota values ('N0065','M0018',to_date('11-07-2017','dd-mm-yyyy'),to_date('15-07-2017','dd-mm-yyyy'),to_date('17-07-2017','dd-mm-yyyy'),1,'R01','K0003','C0001','K0012','C0003'); --cc
+insert into nota values ('N0066','M0019',to_date('12-07-2017','dd-mm-yyyy'),to_date('17-07-2017','dd-mm-yyyy'),to_date('18-07-2017','dd-mm-yyyy'),1,'R03','K0008','C0002','K0014','C0003'); --cs
+insert into nota values ('N0067','M0022',to_date('14-07-2017','dd-mm-yyyy'),to_date('18-07-2017','dd-mm-yyyy'),to_date('18-07-2017','dd-mm-yyyy'),1,'R01','K0006','C0002','K0017','C0004');--ck
+INSERT INTO nota VALUES ('N0068', 'M0005', to_date('16-07-2017', 'dd-mm-yyyy'), to_date('23-07-2017', 'dd-mm-yyyy'), to_date('23-12-2017', 'dd-mm-yyyy'), 1, 'R01', 'K0019', 'C0004', 'K0019', 'C0004');--bed cover
+INSERT INTO nota VALUES ('N0069', 'M0034', to_date('24-07-2017', 'dd-mm-yyyy'), to_date('27-07-2017', 'dd-mm-yyyy'), to_date('28-12-2017', 'dd-mm-yyyy'), 1, 'R04', 'K0018', 'C0004', 'K0018', 'C0004'); --cuci kering
+INSERT INTO nota VALUES ('N0070', 'M0010', to_date('24-07-2017', 'dd-mm-yyyy'), to_date('29-07-2017', 'dd-mm-yyyy'), to_date('31-12-2017', 'dd-mm-yyyy'), 1, 'R02', 'K0011', 'C0003', 'K0011', 'C0003');--cuci setrika
+--AGUSTUS
+INSERT INTO nota VALUES ('N0071', 'M0026', to_date('01-08-2017', 'dd-mm-yyyy'), to_date('04-08-2017', 'dd-mm-yyyy'), to_date('05-08-2017', 'dd-mm-yyyy'), 1, 'R01', 'K0011', 'C0003',  'K0011', 'C0003');--cuci basah
+INSERT INTO nota VALUES ('N0072', 'M0027', to_date('02-08-2017', 'dd-mm-yyyy'), to_date('06-08-2017', 'dd-mm-yyyy'), to_date('07-08-2017', 'dd-mm-yyyy'), 1, 'R02', 'K0012', 'C0003', 'K0012', 'C0003');--cuci kering
+INSERT INTO nota VALUES ('N0073', 'M0028', to_date('02-08-2017', 'dd-mm-yyyy'), to_date('07-08-2017', 'dd-mm-yyyy'), to_date('11-08-2017', 'dd-mm-yyyy'), 1, 'R03', 'K0013', 'C0003', 'K0013', 'C0003');--cuci setrika
+INSERT INTO nota VALUES ('N0074', 'M0029', to_date('04-08-2017', 'dd-mm-yyyy'), to_date('07-08-2017', 'dd-mm-yyyy'), to_date('08-08-2017', 'dd-mm-yyyy'), 1, 'R04', 'K0014', 'C0003', 'K0014', 'C0003');--cuci kilat
+insert into nota values ('N0075','M0013',to_date('07-08-2017','dd-mm-yyyy'),to_date('14-08-2017','dd-mm-yyyy'),to_date('15-08-2017','dd-mm-yyyy'),1,'R01','K0007','C0002','K0006','C0002'); --bc
+INSERT INTO nota VALUES ('N0076', 'M0010', to_date('11-08-2017', 'dd-mm-yyyy'), to_date('14-08-2017', 'dd-mm-yyyy'), to_date('15-08-2017', 'dd-mm-yyyy'), 1, 'R02', 'K0011', 'C0003', 'K0007', 'C0002');--cuci kilat
+INSERT INTO nota VALUES ('N0077', 'M0011', to_date('12-08-2017', 'dd-mm-yyyy'), to_date('19-08-2017', 'dd-mm-yyyy'), to_date('21-08-2017', 'dd-mm-yyyy'), 1, 'R01', 'K0018', 'C0004', 'K0008', 'C0002');--bed cover
+INSERT INTO nota VALUES ('N0078', 'M0015', to_date('12-08-2017', 'dd-mm-yyyy'), to_date('17-08-2017', 'dd-mm-yyyy'), to_date('18-08-2017', 'dd-mm-yyyy'), 1, 'R02', 'K0017', 'C0004', 'K0017', 'C0004');--cuci setrika
+INSERT INTO nota VALUES ('N0079', 'M0025', to_date('13-08-2017', 'dd-mm-yyyy'), to_date('16-08-2017', 'dd-mm-yyyy'), to_date('18-08-2017', 'dd-mm-yyyy'), 1, 'R02', 'K0011', 'C0003', 'K0011', 'C0003');--cuci basah
+insert into nota values ('N0080','M0025',to_date('16-08-2017','dd-mm-yyyy'),to_date('23-08-2017','dd-mm-yyyy'),to_date('23-08-2017','dd-mm-yyyy'),1,'R04','K0016','C0004','K0001','C0001');--bc
+--NOVEMBER
+INSERT INTO nota VALUES ('N0101', 'M0033', to_date('02-11-2017', 'dd-mm-yyyy'), to_date('06-11-2017', 'dd-mm-yyyy'), to_date('07-11-2017', 'dd-mm-yyyy'), 1, 'R01', 'K0016', 'C0004', 'K0016', 'C0004');--cuci kering
+INSERT INTO nota VALUES ('N0102', 'M0034', to_date('02-11-2017', 'dd-mm-yyyy'), to_date('07-11-2017', 'dd-mm-yyyy'), to_date('07-11-2017', 'dd-mm-yyyy'), 1, 'R02', 'K0017', 'C0004', 'K0017', 'C0004'); --cuci setrika
+INSERT INTO nota VALUES ('N0103', 'M0035', to_date('02-11-2017', 'dd-mm-yyyy'), to_date('05-11-2017', 'dd-mm-yyyy'), to_date('06-11-2017', 'dd-mm-yyyy'), 1, 'R03', 'K0016', 'C0004', 'K0002', 'C0001');--cuci basah
+insert into nota values ('N0104','M0012',to_date('06-11-2017','dd-mm-yyyy'),to_date('11-11-2017','dd-mm-yyyy'),to_date('13-11-2017','dd-mm-yyyy'),1,'R05','K0009','C0002','K0009','C0002');--cs
+insert into nota values ('N0105','M0017',to_date('12-11-2017','dd-mm-yyyy'),to_date('16-11-2017','dd-mm-yyyy'),to_date('16-11-2017','dd-mm-yyyy'),1,'R01','K0004','C0001','K0007','C0002'); --ck
+insert into nota values ('N0106','M0024',to_date('12-11-2017','dd-mm-yyyy'),to_date('17-11-2017','dd-mm-yyyy'),to_date('20-11-2017','dd-mm-yyyy'),1,'R01','K0014','C0003','K0007','C0002');--cs
+insert into nota values ('N0107','M0023',to_date('13-11-2017','dd-mm-yyyy'),to_date('16-11-2017','dd-mm-yyyy'),to_date('16-11-2017','dd-mm-yyyy'),1,'R02','K0019','C0004','K0006','C0002');--cc
+insert into nota values ('N0108','M0020',to_date('15-11-2017','dd-mm-yyyy'),to_date('22-11-2017','dd-mm-yyyy'),to_date('22-11-2017','dd-mm-yyyy'),1,'R01','K0002','C0001','K0018','C0004'); --bc
+insert into nota values ('N0109','M0021',to_date('16-11-2017','dd-mm-yyyy'),to_date('19-11-2017','dd-mm-yyyy'),to_date('20-11-2017','dd-mm-yyyy'),1,'R01','K0011','C0003','K0009','C0001'); --cb
+INSERT INTO nota VALUES ('N0110', 'M0035', to_date('28-11-2017', 'dd-mm-yyyy'), to_date('04-12-2018', 'dd-mm-yyyy'), to_date('04-12-2018', 'dd-mm-yyyy'), 1, 'R05', 'K0019', 'C0004', 'K0019', 'C0004');-- bed cover
+
+--DESEMBER
+INSERT INTO nota VALUES ('N0111', 'M0030', to_date('04-12-2017', 'dd-mm-yyyy'), to_date('11-12-2017', 'dd-mm-yyyy'), to_date('11-12-2017', 'dd-mm-yyyy'), 1, 'R05', 'K0011', 'C0003', 'K0014', 'C0003');--bed cover
+INSERT INTO nota VALUES ('N0112', 'M0031', to_date('04-12-2017', 'dd-mm-yyyy'), to_date('11-12-2017', 'dd-mm-yyyy'), to_date('11-12-2017', 'dd-mm-yyyy'), 1, 'R01', 'K0012', 'C0003', 'K0002', 'C0001');--bed cover
+INSERT INTO nota VALUES ('N0113', 'M0032', to_date('04-12-2017', 'dd-mm-yyyy'), to_date('09-12-2017', 'dd-mm-yyyy'), to_date('11-12-2017', 'dd-mm-yyyy'), 1, 'R02', 'K0011', 'C0003', 'K0008', 'C0002');--cuci setrika
+INSERT INTO nota VALUES ('N0114', 'M0021', to_date('05-12-2017', 'dd-mm-yyyy'), to_date('09-12-2017', 'dd-mm-yyyy'), to_date('12-12-2017', 'dd-mm-yyyy'), 1, 'R03', 'K0012', 'C0003', 'K0012', 'C0003');--cuci kering
+INSERT INTO nota VALUES ('N0115', 'M0023', to_date('06-12-2017', 'dd-mm-yyyy'), to_date('09-12-2017', 'dd-mm-yyyy'), to_date('11-12-2017', 'dd-mm-yyyy'), 1, 'R04', 'K0013', 'C0003', 'K0013', 'C0003');--cuci kilat
+INSERT INTO nota VALUES ('N0116', 'M0017', to_date('04-12-2017', 'dd-mm-yyyy'), to_date('07-12-2017', 'dd-mm-yyyy'), to_date('08-12-2017', 'dd-mm-yyyy'), 1, 'R03', 'K0018', 'C0004', 'K0018', 'C0004'); --cuci basah
+INSERT INTO nota VALUES ('N0117', 'M0020', to_date('08-12-2017', 'dd-mm-yyyy'), to_date('11-12-2017', 'dd-mm-yyyy'), to_date('14-12-2017', 'dd-mm-yyyy'), 1, 'R05', 'K0019', 'C0004', 'K0004', 'C0001');--cuci kilat
+INSERT INTO nota VALUES ('N0118', 'M0005', to_date('11-12-2017', 'dd-mm-yyyy'), to_date('15-12-2017', 'dd-mm-yyyy'), to_date('18-12-2017', 'dd-mm-yyyy'), 1, 'R01', 'K0019', 'C0004', 'K0004', 'C0001');--cuci kering
+INSERT INTO nota VALUES ('N0119', 'M0011', to_date('12-12-2017', 'dd-mm-yyyy'), to_date('19-12-2017', 'dd-mm-yyyy'), to_date('21-12-2017', 'dd-mm-yyyy'), 1, 'R01', 'K0016', 'C0004', 'K0008', 'C0002');--bed cover
+INSERT INTO nota VALUES ('N0120', 'M0009', to_date('15-12-2017', 'dd-mm-yyyy'), to_date('18-12-2017', 'dd-mm-yyyy'), to_date('18-12-2017', 'dd-mm-yyyy'), 1, 'R03', 'K0012', 'C0003', 'K0012', 'C0003');--cuci basah, ADA PROMO AKHIR TAHUN
+
+
+--insert detil nota
+--MARET
+INSERT INTO detil_nota VALUES ('N0021', 'JL2', null, 4, 3000, 3000*4);
+INSERT INTO detil_nota VALUES ('N0021', 'JL1', 'Baju merah luntur', 3, 6000, 6000*3);
+INSERT INTO detil_nota VALUES ('N0022', 'JL3', null, 5, 6000, 6000*5);
+INSERT INTO detil_nota VALUES ('N0023', 'JL5', null, 1, 16000, 16000);
+INSERT INTO detil_nota VALUES ('N0024', 'JL1', null, 3, 6000, 6000*3);
+INSERT INTO detil_nota VALUES ('N0024', 'JL4', null, 2.5, 10000, 10000*2.5);
+INSERT INTO detil_nota VALUES ('N0025', 'JL5', null, 2, 16000, 16000*2);
+INSERT INTO detil_nota VALUES ('N0025', 'JL3', null, 5, 8000, 8000*5);
+INSERT INTO detil_nota VALUES ('N0025', 'JL4', 'baju putih dipisah', 2.5, 10000, 10000*2.5);
+INSERT INTO detil_nota VALUES ('N0026', 'JL2', null, 6, 3000, 3000*6);
+INSERT INTO detil_nota VALUES ('N0027', 'JL4', null, 4.5, 10000, 10000*4.5);
+INSERT INTO detil_nota VALUES ('N0028', 'JL2', 'baju batik dipisah', 5, 3000, 5000*3);
+INSERT INTO detil_nota VALUES ('N0029', 'JL5', null, 1, 16000, 16000);
+INSERT INTO detil_nota VALUES ('N0029', 'JL3', null, 5*5, 8000, 8000*5.5);
+INSERT INTO detil_nota VALUES ('N0030', 'JL3', null, 2, 8000, 8000*2);
+
+--APRIL
+INSERT INTO detil_nota VALUES ('N0031','JL1',NULL,4,6000,6000*4);
+INSERT INTO detil_nota VALUES ('N0032','JL1',NULL,5,6000,6000*5);
+INSERT INTO detil_nota VALUES ('N0033','JL1',NULL,3,6000,6000*3);
+INSERT INTO detil_nota VALUES ('N0034','JL2','BAJU BIRU LUNTUR',6,3000,3000*6);
+INSERT INTO detil_nota VALUES ('N0035','JL2',null,5,3000,3000*5);
+INSERT INTO detil_nota VALUES ('N0036','JL2',null,7,3000,3000*7);
+INSERT INTO detil_nota VALUES ('N0037','JL4','BAJU PUTIH DIPISAH',4,10000,10000*4);
+INSERT INTO detil_nota VALUES ('N0038','JL5',null,1,16000,16000);
+INSERT INTO detil_nota VALUES ('N0038','JL2',null,6,3000,3000*6);
+INSERT INTO detil_nota VALUES ('N0039','JL5','PROMO HARI KARTINI',2,16000,16000*2);
+INSERT INTO detil_nota VALUES ('N0040','JL1','PROMO HARI KARTINI',6,6000,6000*6);
+
+--JULI
+INSERT INTO detil_nota VALUES ('N0061','JL4',null, 4,10000,10000*4);
+INSERT INTO detil_nota VALUES ('N0062','JL4','baju putih dipisah', 5.5,10000,10000*5.5);
+INSERT INTO detil_nota VALUES ('N0063','JL3',null, 3.5,8000,8000*3.5);
+INSERT INTO detil_nota VALUES ('N0063','JL1',null, 3.5,6000,6000*3.5);
+INSERT INTO detil_nota VALUES ('N0064','JL3',null, 5,8000,8000*5);
+INSERT INTO detil_nota VALUES ('N0064','JL1',null, 2,6000,6000*2);
+INSERT INTO detil_nota VALUES ('N0065','JL4',null, 5,10000,10000*5);
+INSERT INTO detil_nota VALUES ('N0066','JL3','kerudung putih dipisah', 4,8000,8000*4);
+INSERT INTO detil_nota VALUES ('N0066','JL2',null, 2.5,3000,3000*2.5);
+INSERT INTO detil_nota VALUES ('N0067','JL2',null, 7,3000,3000*7);
+INSERT INTO detil_nota VALUES ('N0068','JL5',null, 1,16000,16000*1);
+INSERT INTO detil_nota VALUES ('N0069','JL2',null, 7.5,3000,3000*7.5);
+INSERT INTO detil_nota VALUES ('N0070','JL3',null, 3,8000,8000*3);
+
+--AGUSTUS
+INSERT INTO detil_nota VALUES ('N0071','JL1',null, 5,6000,6000*5);
+INSERT INTO detil_nota VALUES ('N0072','JL2',null, 7.5,3000,3000*7.5);
+INSERT INTO detil_nota VALUES ('N0073','JL3',null, 3.5,8000,8000*3.5);
+INSERT INTO detil_nota VALUES ('N0074','JL4',null, 3,10000,10000*3);
+INSERT INTO detil_nota VALUES ('N0075','JL5',null, 2,16000,16000*2);
+INSERT INTO detil_nota VALUES ('N0076','JL4','baju biru dipisah', 4.5,10000,10000*4.5);
+INSERT INTO detil_nota VALUES ('N0077','JL5',null, 1,16000,16000*1);
+INSERT INTO detil_nota VALUES ('N0078','JL3',null, 5.5,8000,8000*5.5);
+INSERT INTO detil_nota VALUES ('N0078','JL1',null, 2,6000,6000*2);
+INSERT INTO detil_nota VALUES ('N0079','JL1',null, 6,6000,6000*6);
+INSERT INTO detil_nota VALUES ('N0080','JL5',null, 1,16000,16000*1);
+INSERT INTO detil_nota VALUES ('N0080','JL1','baju putih dipisah', 4,6000,6000*4);
+INSERT INTO detil_nota VALUES ('N0080','JL2',null, 3.5,3000,3000*3.5);
+
+--NOVEMBER
+INSERT INTO detil_nota VALUES ('N0101','JL2',null, 3.5,3000,3000*3.5);
+INSERT INTO detil_nota VALUES ('N0102','JL3',null, 4,8000,8000*4);
+INSERT INTO detil_nota VALUES ('N0103','JL1','baju batik dipisah', 6,6000,6000*6);
+INSERT INTO detil_nota VALUES ('N0104','JL3',null, 3.5,8000,8000*3.5);
+INSERT INTO detil_nota VALUES ('N0104','JL2',null, 2,3000,3000*2);
+INSERT INTO detil_nota VALUES ('N0105','JL2','baju kebaya dipisah', 4.5,3000,3000*4.5);
+INSERT INTO detil_nota VALUES ('N0106','JL3',null, 4,8000,8000*4);
+INSERT INTO detil_nota VALUES ('N0106','JL1',null, 2,6000,6000*2);
+INSERT INTO detil_nota VALUES ('N0107','JL4',null, 4,10000,10000*4);
+INSERT INTO detil_nota VALUES ('N0108','JL5',null, 1,16000,16000*1);
+INSERT INTO detil_nota VALUES ('N0108','JL1',null, 2.5,6000,6000*2.5);
+INSERT INTO detil_nota VALUES ('N0108','JL2',null, 3.5,3000,3000*3.5);
+INSERT INTO detil_nota VALUES ('N0109','JL1',null, 4,6000,6000*4);
+INSERT INTO detil_nota VALUES ('N0110','JL5',null, 2.5,16000,16000*2.5);
+
+--DESEMBER
+INSERT INTO detil_nota VALUES ('N0111','JL5',null, 1.5,16000,16000*1.5);
+INSERT INTO detil_nota VALUES ('N0112','JL5',null, 2.5,16000,16000*2.5);
+INSERT INTO detil_nota VALUES ('N0112','JL3','baju merah luntur', 3.5,8000,8000*3.5);
+INSERT INTO detil_nota VALUES ('N0112','JL1',null, 2,6000,6000*2);
+INSERT INTO detil_nota VALUES ('N0113','JL3',null, 5,8000,8000*5);
+INSERT INTO detil_nota VALUES ('N0114','JL2',null, 6,3000,3000*6);
+INSERT INTO detil_nota VALUES ('N0114','JL1',null, 2,6000,6000*2);
+INSERT INTO detil_nota VALUES ('N0115','JL4',null, 2.5,10000,10000*2.5);
+INSERT INTO detil_nota VALUES ('N0116','JL1',null, 5,6000,6000*5);
+INSERT INTO detil_nota VALUES ('N0117','JL4',null, 3,10000,10000*3);
+INSERT INTO detil_nota VALUES ('N0118','JL2','jilbab biru luntur', 7,3000,3000*7);
+INSERT INTO detil_nota VALUES ('N0118','JL1',null, 2,6000,6000*2);
+INSERT INTO detil_nota VALUES ('N0118','JL2',null, 7,3000,3000*7);
+INSERT INTO detil_nota VALUES ('N0119','JL5',null, 2,16000,16000*2);
+INSERT INTO detil_nota VALUES ('N0120','JL1',null, 7,6000,6000*7);
+
+--DML DETIL HARGA
+--MARET
+INSERT INTO dn_harga VALUES ('N0021', null, 30000, 30000);
+INSERT INTO dn_harga VALUES ('N0022', null, 30000, 30000);
+INSERT INTO dn_harga VALUES ('N0023', null, 16000, 16000);
+INSERT INTO dn_harga VALUES ('N0024', null, 43000, 43000);
+INSERT INTO dn_harga VALUES ('N0025', null, 97000, 97000);
+INSERT INTO dn_harga VALUES ('N0026', null, 18000, 18000);
+INSERT INTO dn_harga VALUES ('N0027', null, 45000, 45000);
+INSERT INTO dn_harga VALUES ('N0028', null, 15000, 15000);
+INSERT INTO dn_harga VALUES ('N0029', null, 60000, 60000);
+INSERT INTO dn_harga VALUES ('N0030', null, 16000, 16000);
+
+--APRIL
+INSERT INTO dn_harga VALUES ('N0031', null, 24000, 24000);
+INSERT INTO dn_harga VALUES ('N0032', null, 30000, 30000);
+INSERT INTO dn_harga VALUES ('N0033', null, 18000, 18000);
+INSERT INTO dn_harga VALUES ('N0034', null, 18000, 18000);
+INSERT INTO dn_harga VALUES ('N0035', null, 15000, 15000);
+INSERT INTO dn_harga VALUES ('N0036', null, 21000, 21000);
+INSERT INTO dn_harga VALUES ('N0037', null, 40000, 40000);
+INSERT INTO dn_harga VALUES ('N0038', null, 34000, 34000);
+INSERT INTO dn_harga VALUES ('N0039', 'P0004', 32000, 32000*0.3);
+INSERT INTO dn_harga VALUES ('N0040', 'P0004', 36000, 36000*0.3);
+
+--JULI
+INSERT INTO dn_harga VALUES ('N0061', null, 40000, 40000);
+INSERT INTO dn_harga VALUES ('N0062', null, 55000, 55000);
+INSERT INTO dn_harga VALUES ('N0063', null, 49000, 49000);
+INSERT INTO dn_harga VALUES ('N0064', null, 52000, 52000);
+INSERT INTO dn_harga VALUES ('N0065', null, 50000, 50000);
+INSERT INTO dn_harga VALUES ('N0066', null, 39500, 39500);
+INSERT INTO dn_harga VALUES ('N0067', null, 21000, 21000);
+INSERT INTO dn_harga VALUES ('N0068', null, 16000, 16000);
+INSERT INTO dn_harga VALUES ('N0069', null, 22500, 22500);
+INSERT INTO dn_harga VALUES ('N0070', null, 24000, 24000);
+
+--AGUSTUS
+INSERT INTO dn_harga VALUES ('N0071', null, 30000, 30000);
+INSERT INTO dn_harga VALUES ('N0072', null, 22500, 22500);
+INSERT INTO dn_harga VALUES ('N0073', null, 28000, 28000);
+INSERT INTO dn_harga VALUES ('N0074', null, 30000, 30000);
+INSERT INTO dn_harga VALUES ('N0075', null, 32000, 32000);
+INSERT INTO dn_harga VALUES ('N0076', null, 45000, 45000);
+INSERT INTO dn_harga VALUES ('N0077', null, 16000, 16000);
+INSERT INTO dn_harga VALUES ('N0078', null, 56000, 56000);
+INSERT INTO dn_harga VALUES ('N0079', null, 36000, 36000);
+INSERT INTO dn_harga VALUES ('N0080', null, 50000, 50000);
+
+--NOVEMBER
+INSERT INTO dn_harga VALUES ('N0101', null, 10500, 10500);
+INSERT INTO dn_harga VALUES ('N0102', null, 32000, 32000);
+INSERT INTO dn_harga VALUES ('N0103', null, 36000, 36000);
+INSERT INTO dn_harga VALUES ('N0104', null, 34000, 34000);
+INSERT INTO dn_harga VALUES ('N0105', 'P0002', 13500, 13500*0.1);
+INSERT INTO dn_harga VALUES ('N0106', 'P0002', 44000, 44000*0.1);
+INSERT INTO dn_harga VALUES ('N0107', 'P0002', 40000, 40000*0.1);
+INSERT INTO dn_harga VALUES ('N0108', 'P0002', 41000, 41000*0.1);
+INSERT INTO dn_harga VALUES ('N0109', 'P0002', 24000, 24000*0.1);
+INSERT INTO dn_harga VALUES ('N0110', null, 40000, 40000);
+
+--DESEMBER
+INSERT INTO dn_harga VALUES ('N0111', null, 24000, 24000);
+INSERT INTO dn_harga VALUES ('N0112', null, 80000, 80000);
+INSERT INTO dn_harga VALUES ('N0113', null, 40000, 40000);
+INSERT INTO dn_harga VALUES ('N0114', null, 30000, 30000);
+INSERT INTO dn_harga VALUES ('N0115', null, 25000, 25000);
+INSERT INTO dn_harga VALUES ('N0116', null, 30000, 30000);
+INSERT INTO dn_harga VALUES ('N0117', null, 30000, 30000);
+INSERT INTO dn_harga VALUES ('N0118', null, 54000, 54000);
+INSERT INTO dn_harga VALUES ('N0119', null, 32000, 32000);
+INSERT INTO dn_harga VALUES ('N0120', 'P0001', 42000, 42000*0.2);
