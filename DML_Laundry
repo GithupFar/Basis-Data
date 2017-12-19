@@ -108,6 +108,22 @@ insert into nota values ('N0022','M0022',to_date('14-12-2017','dd-mm-yyyy'),to_d
 insert into nota values ('N0023','M0023',to_date('13-12-2017','dd-mm-yyyy'),to_date('16-12-2017','dd-mm-yyyy'),to_date('16-12-2017','dd-mm-yyyy'),1,'R02','K0019','C0004','K0006','C0002');
 insert into nota values ('N0024','M0024',to_date('12-12-2017','dd-mm-yyyy'),to_date('17-12-2017','dd-mm-yyyy'),to_date('18-12-2017','dd-mm-yyyy'),1,'R01','K0014','C0003','K0007','C0002');
 insert into nota values ('N0025','M0025',to_date('16-12-2017','dd-mm-yyyy'),to_date('19-12-2017','dd-mm-yyyy'),to_date('19-12-2017','dd-mm-yyyy'),1,'R04','K0016','C0004','K0001','C0001');
+--punya nada
+INSERT INTO nota VALUES ('N0026', 'M0026', to_date('01-12-2017', 'dd-mm-yyyy'), to_date('04-12-2017', 'dd-mm-yyyy'), to_date('05-12-2017', 'dd-mm-yyyy'), 1, 'R01', 'C0003', 'K0011', 'C0003', 'K0011');--cuci basah
+INSERT INTO nota VALUES ('N0027', 'M0027', to_date('02-12-2017', 'dd-mm-yyyy'), to_date('06-12-2017', 'dd-mm-yyyy'), to_date('06-12-2017', 'dd-mm-yyyy'), 1, 'R02', 'C0003', 'K0012', 'C0003', 'K0012');--cuci kering
+INSERT INTO nota VALUES ('N0028', 'M0028', to_date('02-12-2017', 'dd-mm-yyyy'), to_date('07-12-2017', 'dd-mm-yyyy'), to_date('11-12-2017', 'dd-mm-yyyy'), 1, 'R03', 'C0003', 'K0013', 'C0003', 'K0013');--cuci setrika
+INSERT INTO nota VALUES ('N0029', 'M0029', to_date('04-12-2017', 'dd-mm-yyyy'), to_date('07-12-2017', 'dd-mm-yyyy'), to_date('08-12-2017', 'dd-mm-yyyy'), 1, 'R04', 'C0003', 'K0014', 'C0003', 'K0014');--cuci kilat
+INSERT INTO nota VALUES ('N0030', 'M0030', to_date('04-12-2017', 'dd-mm-yyyy'), to_date('11-12-2017', 'dd-mm-yyyy'), to_date('11-12-2017', 'dd-mm-yyyy'), 1, 'R05', 'C0003', 'K0011', 'C0003', 'K0014');--bed cover
+INSERT INTO nota VALUES ('N0031', 'M0031', to_date('04-12-2017', 'dd-mm-yyyy'), to_date('11-12-2017', 'dd-mm-yyyy'), to_date('11-12-2017', 'dd-mm-yyyy'), 1, 'R01', 'C0003', 'K0012', 'C0001', 'K0002');--bed cover
+INSERT INTO nota VALUES ('N0032', 'M0032', to_date('04-12-2017', 'dd-mm-yyyy'), to_date('09-12-2017', 'dd-mm-yyyy'), to_date('11-12-2017', 'dd-mm-yyyy'), 1, 'R02', 'C0003', 'K0011', 'C0002', 'K0008');--cuci setrika
+INSERT INTO nota VALUES ('N0033', 'M0033', to_date('02-12-2017', 'dd-mm-yyyy'), to_date('06-12-2017', 'dd-mm-yyyy'), to_date('07-12-2017', 'dd-mm-yyyy'), 1, 'R01', 'C0004', 'K0016', 'C0004', 'K0016');--cuci kering
+INSERT INTO nota VALUES ('N0034', 'M0034', to_date('02-12-2017', 'dd-mm-yyyy'), to_date('07-12-2017', 'dd-mm-yyyy'), to_date('07-12-2017', 'dd-mm-yyyy'), 1, 'R02', 'C0004', 'K0017', 'C0004', 'K0019'); --dpt promo,cuci setrika
+INSERT INTO nota VALUES ('N0035', 'M0035', to_date('02-12-2017', 'dd-mm-yyyy'), to_date('05-12-2017', 'dd-mm-yyyy'), to_date('06-12-2017', 'dd-mm-yyyy'), 1, 'R03', 'C0004', 'K0011', 'C0001', 'K0002');--cuci basah
+INSERT INTO nota VALUES ('N0036', 'M0017', to_date('04-12-2017', 'dd-mm-yyyy'), to_date('07-12-2017', 'dd-mm-yyyy'), to_date('08-12-2017', 'dd-mm-yyyy'), 1, 'R03', 'C0004', 'K0016', 'C0004', 'K0016'); --ADA PROMO, cuci basah
+INSERT INTO nota VALUES ('N0037', 'M0020', to_date('08-12-2017', 'dd-mm-yyyy'), to_date('11-12-2017', 'dd-mm-yyyy'), to_date('14-12-2017', 'dd-mm-yyyy'), 1, 'R05', 'C0004', 'K0011', 'C0001', 'K0004');--cuci kilat
+INSERT INTO nota VALUES ('N0038', 'M0005', to_date('11-12-2017', 'dd-mm-yyyy'), to_date('15-12-2017', 'dd-mm-yyyy'), to_date('16-12-2017', 'dd-mm-yyyy'), 1, 'R01', 'C0004', 'K0011', 'C0001', 'K0004');--cuci kering
+INSERT INTO nota VALUES ('N0039', 'M0010', to_date('11-12-2017', 'dd-mm-yyyy'), to_date('14-12-2017', 'dd-mm-yyyy'), to_date('18-12-2017', 'dd-mm-yyyy'), 1, 'R02', 'C0003', 'K0011', 'C0002', 'K0007');--cuci kilat
+INSERT INTO nota VALUES ('N0040', 'M0011', to_date('12-12-2017', 'dd-mm-yyyy'), to_date('19-12-2017', 'dd-mm-yyyy'), to_date('21-12-2017', 'dd-mm-yyyy'), 1, 'R01', 'C0004', 'K0011', 'C0002', 'K0008');--bed cover
 
 
 --insert detil nota
