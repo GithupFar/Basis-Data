@@ -162,6 +162,33 @@ insert into detil_nota values ('N0023','JL3',null,8000,8000);
 insert into detil_nota values ('N0024','JL4',null,15000,15000);
 insert into detil_nota values ('N0025','JL5','P0001',16000,null);
 update detil_nota set dn_jumlahakhir=dn_jumlahawal-(dn_jumlahawal*0.2) where p_kode='P0001';
+--detil nota nada lengkap
+INSERT INTO detil_nota VALUES ('N0026', 'JL1', null, 30000, 30000);
+INSERT INTO detil_nota VALUES ('N0027', 'JL2', null, 18000, 18000);
+INSERT INTO detil_nota VALUES ('N0028', 'JL3', null, 56000, 56000);
+INSERT INTO detil_nota VALUES ('N0029', 'JL4', null, 30000, 30000);
+INSERT INTO detil_nota VALUES ('N0030', 'JL5', null, 16000, 16000);
+INSERT INTO detil_nota VALUES ('N0031', 'JL5', null, 32000, 32000);
+INSERT INTO detil_nota VALUES ('N0032', 'JL3', null, 40000, 40000);
+INSERT INTO detil_nota VALUES ('N0033', 'JL2', null, 27000, 27000);
+INSERT INTO detil_nota VALUES ('N0034', 'JL4', null, 20000, 20000);
+INSERT INTO detil_nota VALUES ('N0035', 'JL2', null, 21000, 21000);
+INSERT INTO detil_nota VALUES ('N0036', 'JL3', null, 16000, 16000);
+INSERT INTO detil_nota VALUES ('N0037', 'JL1', null, 18000, 18000);
+INSERT INTO detil_nota VALUES ('N0038', 'JL1', null, 24000, 24000);
+INSERT INTO detil_nota VALUES ('N0039', 'JL4', null, 10000, 10000);
+INSERT INTO detil_nota VALUES ('N0040', 'JL2', null, 15000, 15000);
+INSERT INTO detil_nota VALUES ('N0041', 'JL4', null, 20000, 20000);
+INSERT INTO detil_nota VALUES ('N0042', 'JL5', null, 48000, 48000);
+INSERT INTO detil_nota VALUES ('N0043', 'JL3', null, 48000, 48000);
+INSERT INTO detil_nota VALUES ('N0044', 'JL5', null, 16000, 16000);
+INSERT INTO detil_nota VALUES ('N0045', 'JL1', null, 24000, 24000);
+INSERT INTO detil_nota VALUES ('N0046', 'JL1', 'P0001', 30000, 24000);
+INSERT INTO detil_nota VALUES ('N0047', 'JL5', 'P0001', 32000, 25600);
+INSERT INTO detil_nota VALUES ('N0048', 'JL2', 'P0001', 21000, 16800);
+INSERT INTO detil_nota VALUES ('N0049', 'JL2', 'P0001', 48000, 38400);
+INSERT INTO detil_nota VALUES ('N0050', 'JL5', 'P0001', 48000, 38400);
+
 
 
 
