@@ -87,13 +87,13 @@ insert into nota values ('N0001','M0001',to_date('01-12-2017','dd-mm-yyyy'),to_d
 insert into nota values ('N0002','M0002',to_date('02-12-2017','dd-mm-yyyy'),to_date('05-12-2017','dd-mm-yyyy'),to_date('05-12-2017','dd-mm-yyyy'),1,'R02','K0002','C0001','K0003','C0001');
 insert into nota values ('N0003','M0003',to_date('04-12-2017','dd-mm-yyyy'),to_date('07-12-2017','dd-mm-yyyy'),to_date('07-12-2017','dd-mm-yyyy'),1,'R01','K0003','C0001','K0002','C0001');
 insert into nota values ('N0004','M0004',to_date('05-12-2017','dd-mm-yyyy'),to_date('09-12-2017','dd-mm-yyyy'),to_date('09-12-2017','dd-mm-yyyy'),1,'R02','K0004','C0001','K0004','C0001'); --ck
-insert into nota values ('N0005','M0005',to_date('06-12-2017','dd-mm-yyyy'),to_date('10-12-2017','dd-mm-yyyy'),to_date('11-12-2017','dd-mm-yyyy')default,'0','R03','K0003','C0001','K0001','C0001');
+insert into nota values ('N0005','M0005',to_date('06-12-2017','dd-mm-yyyy'),to_date('10-12-2017','dd-mm-yyyy'),default,0,'R03','K0003','C0001','K0001','C0001');
 insert into nota values ('N0006','M0006',to_date('07-12-2017','dd-mm-yyyy'),to_date('11-12-2017','dd-mm-yyyy'),to_date('11-12-2017','dd-mm-yyyy'),1,'R04','K0002','C0001','K0002','C0001');
 insert into nota values ('N0007','M0007',to_date('08-12-2017','dd-mm-yyyy'),to_date('11-12-2017','dd-mm-yyyy'),to_date('12-12-2017','dd-mm-yyyy'),1,'R05','K0003','C0001','K0004','C0001'); --cc
 insert into nota values ('N0008','M0008',to_date('01-12-2017','dd-mm-yyyy'),to_date('04-12-2017','dd-mm-yyyy'),to_date('04-12-2017','dd-mm-yyyy'),1,'R01','K0006','C0002','K0006','C0002');
 insert into nota values ('N0009','M0009',to_date('02-12-2017','dd-mm-yyyy'),to_date('05-12-2017','dd-mm-yyyy'),to_date('05-12-2017','dd-mm-yyyy'),1,'R02','K0009','C0002','K0007','C0002');
 insert into nota values ('N0010','M0010',to_date('04-12-2017','dd-mm-yyyy'),to_date('09-12-2017','dd-mm-yyyy'),to_date('09-12-2017','dd-mm-yyyy'),1,'R03','K0007','C0002','K0007','C0002'); --cs
-insert into nota values ('N0011','M0011',to_date('05-12-2017','dd-mm-yyyy'),to_date('10-12-2017','dd-mm-yyyy'),to_date('11-12-2017','dd-mm-yyyy')default,'0','R04','K0008','C0002','K0008','C0002');
+insert into nota values ('N0011','M0011',to_date('05-12-2017','dd-mm-yyyy'),to_date('10-12-2017','dd-mm-yyyy'),default,0,'R04','K0008','C0002','K0008','C0002');
 insert into nota values ('N0012','M0012',to_date('06-12-2017','dd-mm-yyyy'),to_date('11-12-2017','dd-mm-yyyy'),to_date('11-12-2017','dd-mm-yyyy'),1,'R05','K0009','C0002','K0009','C0002');
 insert into nota values ('N0013','M0013',to_date('07-12-2017','dd-mm-yyyy'),to_date('14-12-2017','dd-mm-yyyy'),to_date('15-12-2017','dd-mm-yyyy'),1,'R01','K0007','C0002','K0006','C0002'); --bc
 insert into nota values ('N0014','M0014',to_date('08-12-2017','dd-mm-yyyy'),to_date('15-12-2017','dd-mm-yyyy'),to_date('15-12-2017','dd-mm-yyyy'),1,'R02','K0008','C0002','K0006','C0002');
@@ -107,7 +107,7 @@ insert into nota values ('N0021','M0021',to_date('16-12-2017','dd-mm-yyyy'),to_d
 insert into nota values ('N0022','M0022',to_date('14-12-2017','dd-mm-yyyy'),to_date('18-12-2017','dd-mm-yyyy'),to_date('18-12-2017','dd-mm-yyyy'),1,'R01','K0006','C0002','K0017','C0004');
 insert into nota values ('N0023','M0023',to_date('13-12-2017','dd-mm-yyyy'),to_date('16-12-2017','dd-mm-yyyy'),to_date('16-12-2017','dd-mm-yyyy'),1,'R02','K0019','C0004','K0006','C0002');
 insert into nota values ('N0024','M0024',to_date('12-12-2017','dd-mm-yyyy'),to_date('17-12-2017','dd-mm-yyyy'),to_date('18-12-2017','dd-mm-yyyy'),1,'R01','K0014','C0003','K0007','C0002');
-insert into nota values ('N0025','M0025',to_date('16-12-2017','dd-mm-yyyy'),to_date('19-12-2017','dd-mm-yyyy'),to_date('19-12-2017','dd-mm-yyyy'),1,'R04','K0016','C0004','K0001','C0001');
+insert into nota values ('N0025','M0025',to_date('16-12-2017','dd-mm-yyyy'),to_date('23-12-2017','dd-mm-yyyy'),to_date('23-12-2017','dd-mm-yyyy'),1,'R04','K0016','C0004','K0001','C0001');
 --punya nada lengkap
 INSERT INTO nota VALUES ('N0026', 'M0026', to_date('01-12-2017', 'dd-mm-yyyy'), to_date('04-12-2017', 'dd-mm-yyyy'), to_date('05-12-2017', 'dd-mm-yyyy'), 1, 'R01', 'C0003', 'K0011', 'C0003', 'K0011');--cuci basah
 INSERT INTO nota VALUES ('N0027', 'M0027', to_date('02-12-2017', 'dd-mm-yyyy'), to_date('06-12-2017', 'dd-mm-yyyy'), to_date('06-12-2017', 'dd-mm-yyyy'), 1, 'R02', 'C0003', 'K0012', 'C0003', 'K0012');--cuci kering
@@ -137,26 +137,33 @@ INSERT INTO nota VALUES ('N0050', 'M0035', to_date('28-12-2017', 'dd-mm-yyyy'), 
 
 --insert detil nota
 INSERT INTO detil_nota VALUES ('N0001','JL1',null,6000,6000); --J1 = 6000
-INSERT INTO detil_nota VALUES ('N0002','JL2',null,6000,6000); --J2 = 3000
-INSERT INTO detil_nota VALUES ('N0003','JL3',null,14000,14000); --J3 = 8000
-INSERT INTO detil_nota VALUES ('N0004','JL4',null,10000,10000); --J4 = 10000
-INSERT INTO detil_nota VALUES ('N0005','JL5',null,16000,16000); --J5 = 16000
-INSERT INTO detil_nota VALUES ('N0006','JL1',null,12000,12000);
-INSERT INTO detil_nota VALUES ('N0007','JL2',null,3000,3000);
+INSERT INTO detil_nota VALUES ('N0002','JL1',null,6000,6000); --J2 = 3000
+INSERT INTO detil_nota VALUES ('N0003','JL1',null,14000,14000); --J3 = 8000
+INSERT INTO detil_nota VALUES ('N0004','JL2',null,10000,10000); --J4 = 10000
+INSERT INTO detil_nota VALUES ('N0005','JL2',null,12000,12000); --J5 = 16000
+INSERT INTO detil_nota VALUES ('N0006','JL2',null,3000,3000);
+INSERT INTO detil_nota VALUES ('N0007','JL3',null,4000,4000);
 INSERT INTO detil_nota VALUES ('N0008','JL3',null,8000,8000);
-INSERT INTO detil_nota VALUES ('N0009','JL4',null,10000,10000);
-INSERT INTO detil_nota VALUES ('N0010','JL5',null,8000,8000);
-INSERT INTO detil_nota VALUES ('N0011','JL1',null,6000,6000);
-INSERT INTO detil_nota VALUES ('N0012','JL2',null,5000,5000);
-INSERT INTO detil_nota VALUES ('N0013','JL3',null,10000,10000);
-INSERT INTO detil_nota VALUES ('N0014','JL4',null,5000,5000);
+INSERT INTO detil_nota VALUES ('N0009','JL3',null,10000,10000);
+INSERT INTO detil_nota VALUES ('N0010','JL4',null,10000,10000);
+INSERT INTO detil_nota VALUES ('N0011','JL4',null,20000,20000);
+INSERT INTO detil_nota VALUES ('N0012','JL4',null,5000,5000);
+INSERT INTO detil_nota VALUES ('N0013','JL5',null,16000,16000);
+INSERT INTO detil_nota VALUES ('N0014','JL5',null,8000,8000);
 INSERT INTO detil_nota VALUES ('N0015','JL5',null,18000,18000);
 INSERT INTO detil_nota VALUES ('N0016','JL1',null,6000,6000);
 INSERT INTO detil_nota VALUES ('N0017','JL2',null,3000,3000);
 INSERT INTO detil_nota VALUES ('N0018','JL3',null,8000,8000);
 INSERT INTO detil_nota VALUES ('N0019','JL4',null,10000,10000);
+insert into detil_nota values ('N0020','JL5','P0001',16000,null);
+insert into detil_nota values ('N0021','JL1','P0001',6000,null);
+insert into detil_nota values ('N0022','JL2',null,6000,6000);
+insert into detil_nota values ('N0023','JL3',null,8000,8000);
+insert into detil_nota values ('N0024','JL4',null,15000,15000);
+insert into detil_nota values ('N0025','JL5','P0001',16000,null);
+update detil_nota set dn_jumlahakhir=dn_jumlahawal-(dn_jumlahawal*0.2) where p_kode='P0001';
 
---yang 6 bingung ngitungnya...besok dibahas
+
 
 
 
