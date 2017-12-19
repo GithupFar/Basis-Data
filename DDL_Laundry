@@ -79,14 +79,16 @@ create table detil_nota(
   constraint fk_j_id foreign key (j_id) references jenis_layanan(j_id)
 );
 
-create table dn_total(
+create table dn_harga(
+  n_no      char(5),
   p_kode    char(5),
   dn_total int,  --jumlahsebelumpromo
   dn_akhir int, --jumlahsetelahpromo
-  constraint fk_p_kode foreign key (p_kode) references promo(p_kode)
+  constraint fk1_p_kode foreign key (p_kode) references promo(p_kode)
 );
 
 --use this to drop table
+drop table dn_harga;
 DROP TABLE detil_nota;
 DROP TABLE nota;
 DROP TABLE karyawan;
