@@ -164,7 +164,7 @@ INSERT INTO detil_nota VALUES ('N0018','JL2',null,3.2,3000,3000*4);
 INSERT INTO detil_nota VALUES ('N0019','JL2',null,1.8,3000,3000*4);
 INSERT INTO detil_nota VALUES ('N0020','JL1',null,3.8,6000,6000*3.8);
 INSERT INTO detil_nota VALUES ('N0041','JL1',null,2.8,6000,6000*2.8);
-INSERT INTO detil_nota VALUES ('N0042','JL2',null,0.8,3000,3000*0.8);
+INSERT INTO detil_nota VALUES ('N0042','JL2',null,3.6,3000,3000*3.6);
 INSERT INTO detil_nota VALUES ('N0043','JL3',null,1,8000,8000*1);
 INSERT INTO detil_nota VALUES ('N0044','JL4',null,2,10000,10000*2);
 INSERT INTO detil_nota VALUES ('N0045','JL5',null,1,16000,16000*1);
@@ -179,13 +179,13 @@ INSERT INTO detil_nota VALUES ('N0053','JL3',null,2,8000,8000*2);
 INSERT INTO detil_nota VALUES ('N0054','JL4',null,2,10000,10000*2);
 INSERT INTO detil_nota VALUES ('N0055','JL5',null,2,16000,16000*2);
 INSERT INTO detil_nota VALUES ('N0056','JL1',null,1,6000,6000*1);
-INSERT INTO detil_nota VALUES ('N0057','JL2',null,0.7,3000,3000*0.7);
+INSERT INTO detil_nota VALUES ('N0057','JL2',null,2.7,3000,3000*2.7);
 INSERT INTO detil_nota VALUES ('N0058','JL3',null,1,8000,8000*1);
 INSERT INTO detil_nota VALUES ('N0059','JL4',null,1,10000,10000*1);
+INSERT INTO detil_nota VALUES ('N0060','JL1',null,1,6000,6000*1);
 INSERT INTO detil_nota VALUES ('N0060','JL5',null,1,16000,16000*1);
-INSERT INTO detil_nota VALUES ('N0060','JL5',null,1,16000,16000*1);
-INSERT INTO detil_nota VALUES ('N0081','JL1',null,1.6,6000,6000*1.6);
-INSERT INTO detil_nota VALUES ('N0082','JL2',null,1.4,3000,3000*1.4);
+INSERT INTO detil_nota VALUES ('N0081','JL1',null,2.6,6000,6000*2.6);
+INSERT INTO detil_nota VALUES ('N0082','JL2',null,2.4,3000,3000*2.4);
 INSERT INTO detil_nota VALUES ('N0083','JL3',null,2,8000,8000*2);
 INSERT INTO detil_nota VALUES ('N0084','JL2',null,4,3000,3000*4);
 INSERT INTO detil_nota VALUES ('N0085','JL3',null,1,8000,8000*1);
@@ -212,11 +212,65 @@ INSERT INTO detil_nota VALUES ('N0099','JL1',null,2,6000,6000*2);
 INSERT INTO detil_nota VALUES ('N0099','JL5',null,1,16000,16000*1);
 INSERT INTO detil_nota VALUES ('N0100','JL3',null,4,8000,8000*4);
 
-
-
-
-
-
-
-
-
+-DML dn_harga
+insert into dn_harga values ('N0001',null,22000,22000);
+insert into dn_harga values ('N0002',null,75000,7500);
+insert into dn_harga values ('N0003',null,32000,32000);
+insert into dn_harga values ('N0004',null,20000,20000);
+insert into dn_harga values ('N0005',null,16000,16000);
+insert into dn_harga values ('N0006',null,6000,6000);
+insert into dn_harga values ('N0007',null,9000,9000);
+insert into dn_harga values ('N0008',null,8000,8000);
+insert into dn_harga values ('N0009',null,8000,8000);
+insert into dn_harga values ('N0010',null,12000,12000);
+insert into dn_harga values ('N0011',null,3000,3000);
+insert into dn_harga values ('N0012',null,24000,24000);
+insert into dn_harga values ('N0013',null,9000,9000);
+insert into dn_harga values ('N0014',null,32000,32000);
+insert into dn_harga values ('N0015',null,16000,26000);
+insert into dn_harga values ('N0016',null,34000,34000);
+insert into dn_harga values ('N0017',null,32000,32000);
+insert into dn_harga values ('N0018',null,12000,12000);
+insert into dn_harga values ('N0019',null,12000,12000);
+insert into dn_harga values ('N0020',null,22800,22800);
+insert into dn_harga values ('N0041','P0005',16800,16800);
+update dn_harga set dn_akhir=dn_total-(dn_total*0.2) where p_kode = 'P0005';
+insert into dn_harga values ('N0042',null,10800,10800);
+insert into dn_harga values ('N0043',null,8000,8000);
+insert into dn_harga values ('N0044',null,20000,20000);
+insert into dn_harga values ('N0045',null,16000,16000);
+insert into dn_harga values ('N0046',null,18000,18000);
+insert into dn_harga values ('N0047',null,4500,4500);
+insert into dn_harga values ('N0048',null,24000,24000);
+insert into dn_harga values ('N0049',null,25000,25000);
+insert into dn_harga values ('N0050',null,16000,16000);
+insert into dn_harga values ('N0051',null,12000,12000);
+insert into dn_harga values ('N0052',null,48000,48000);
+insert into dn_harga values ('N0053',null,16000,16000);
+insert into dn_harga values ('N0054',null,20000,20000);
+insert into dn_harga values ('N0055',null,32000,32000);
+insert into dn_harga values ('N0056',null,6000,6000);
+insert into dn_harga values ('N0057',null,8100,8100);
+insert into dn_harga values ('N0058',null,8000,8000);
+insert into dn_harga values ('N0059',null,10000,10000);
+insert into dn_harga values ('N0060',null,16000,16000);
+insert into dn_harga values ('N0081',null,15600,15600);
+insert into dn_harga values ('N0082',null,7200,7200);
+insert into dn_harga values ('N0083',null,16000,16000);
+insert into dn_harga values ('N0084',null,12000,12000);
+insert into dn_harga values ('N0085',null,8000,8000);
+insert into dn_harga values ('N0086',null,6000,6000);
+insert into dn_harga values ('N0087',null,16000,16000);
+insert into dn_harga values ('N0088',null,10000,10000);
+insert into dn_harga values ('N0089',null,20000,20000);
+insert into dn_harga values ('N0090',null,18000,18000);
+insert into dn_harga values ('N0091',null,6000,6000);
+insert into dn_harga values ('N0092',null,6000,6000);
+insert into dn_harga values ('N0093',null,8000,8000);
+insert into dn_harga values ('N0094',null,20000,20000);
+insert into dn_harga values ('N0095',null,22000,22000);
+insert into dn_harga values ('N0096',null,22000,22000);
+insert into dn_harga values ('N0097',null,30000,30000);
+insert into dn_harga values ('N0098',null,39000,39000);
+insert into dn_harga values ('N0099',null,28000,28000);
+insert into dn_harga values ('N0100',null,32000,32000);
