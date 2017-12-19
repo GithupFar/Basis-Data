@@ -132,7 +132,7 @@ INSERT INTO nota VALUES ('N0045', 'M0025', to_date('13-12-2017', 'dd-mm-yyyy'), 
 INSERT INTO nota VALUES ('N0046', 'M0009', to_date('15-12-2017', 'dd-mm-yyyy'), to_date('18-12-2017', 'dd-mm-yyyy'), to_date('18-12-2017', 'dd-mm-yyyy'), 1, 'R03', 'C0003', 'K0012', 'C0003', 'K0012');--cuci basah, ADA PROMO AKHIR TAHUN
 INSERT INTO nota VALUES ('N0047', 'M0005', to_date('16-12-2017', 'dd-mm-yyyy'), to_date('23-12-2017', 'dd-mm-yyyy'), to_date('23-12-2017', 'dd-mm-yyyy'), 1, 'R01', 'C0004', 'K0019', 'C0004', 'K0019');--bed cover, ada promo
 INSERT INTO nota VALUES ('N0048', 'M0034', to_date('23-12-2017', 'dd-mm-yyyy'), to_date('26-12-2017', 'dd-mm-yyyy'), to_date('26-12-2017', 'dd-mm-yyyy'), 1, 'R04', 'C0004', 'K0018', 'C0004', 'K0018'); -- ADA PROMO, cuci kering
-INSERT INTO nota VALUES ('N0049', 'M0010', to_date('23-12-2017', 'dd-mm-yyyy'), to_date('28-12-2017', 'dd-mm-yyyy'), to_date('29-12-2017', 'dd-mm-yyyy'), 1, 'R02', 'C0003', 'K0011', 'C0003', 'K0021');--cuci setrika, ada promo
+INSERT INTO nota VALUES ('N0049', 'M0010', to_date('23-12-2017', 'dd-mm-yyyy'), to_date('28-12-2017', 'dd-mm-yyyy'), to_date('29-12-2017', 'dd-mm-yyyy'), 1, 'R02', 'C0003', 'K0011', 'C0003', 'K0011');--cuci setrika, ada promo
 INSERT INTO nota VALUES ('N0050', 'M0035', to_date('28-12-2017', 'dd-mm-yyyy'), to_date('04-01-2018', 'dd-mm-yyyy'), to_date('04-01-2018', 'dd-mm-yyyy'), 1, 'R05', 'C0004', 'K0019', 'C0004', 'K0019');--ada promo, bed cover
 
 --insert detil nota
